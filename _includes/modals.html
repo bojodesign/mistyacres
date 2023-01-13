@@ -1,0 +1,480 @@
+<!-- Portfolio Modals -->
+<!-- {% for post in site.posts %}
+<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog"
+  aria-hidden="true">
+  <div class="modal-content">
+    <div class="close-modal" data-dismiss="modal">
+      <div class="lr">
+        <div class="rl">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <div class="modal-body">
+            <h2>{{ post.title }}</h2>
+            <hr class="star-primary">
+            <img src="{{ '/assets/img/plants/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            {% if post.description %}
+            <p>{{ post.description }}</p>
+            {% endif %}
+            <ul class="list-inline item-details">
+              {% if post.client %}
+              <li>Client:
+                <strong>{{ post.client }}</strong>
+              </li>
+              {% endif %}
+              {% if post.project-date %}
+              <li>Date:
+                <strong>{{ post.project-date }}</strong>
+              </li>
+              {% endif %}
+              {% if post.category %}
+              <li>Service:
+                <strong>{{ post.category }}</strong>
+              </li>
+              {% endif %}
+            </ul>
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+              Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %} -->
+<!-- Portfolio Modals-->
+<!-- Portfolio Modal 1-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Coprosma robusta</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Karamu</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/karamu.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Easily grown shrub. Glossy dark green leaves. Bright orange-red berries on female plants.</p>
+							<p class="mb-4">2m x 1.5m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 2-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Cordyline australis</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Cabbage Tree - Ti Kouka</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+							<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/tikouka.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Hardy sword leaf type palm with tall trunk. Sprays of white flowers in late spring.</p>
+							<p class="mb-4">6m x 2m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 3-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Dodonaea viscosa</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Ake Ake</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/akeake.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Hardy green bushy large shrub. Excellent for hedges.</p>
+							<p class="mb-4">7m x 2.5m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 4-->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Dodonaea viscosa purpurea</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Purple Ake Ake</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/pakeake.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Hardy, fast growing bushy shrub or small tree. Purple/burgundy leaves. Great for hedges. </p>
+							<p class="mb-4">6m x 2.5m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 5-->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Griselinia littoralis</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Native Broadleaf - Kapuka</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/kapuka.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Glossy green, leathery leaves. Hardy shrub/small tree.</p>
+							<p class="mb-4">3m x 2m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 6-->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Kunzea ericoides</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Kanuka</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/kanuka.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Great for re-vegetation and can handle dry ground. Small leaves with bright white flowers.</p>
+							<p class="mb-4">8m x 3m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 7-->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Leptospermum scopariume</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Tea Tree - Manuka</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/manuka.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Similar to Kanuka. Slightly larger leaves. Can handle moist soils.</p>
+							<p class="mb-4">4m x 3m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 8-->
+<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Phormium cookianum</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Mountain Flax</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/mountainflax.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Smaller growing flax than P. tenax. Good on hills, cliffs, dry areas.</p>
+							<p class="mb-4">1m x 1m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 9-->
+<div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" aria-labelledby="portfolioModal9" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Phormium tenax</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">NZ Flax - Harakeke</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/harakeke.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Well-known plant with green sword leaves. Handles wet areas.</p>
+							<p class="mb-4">2m x 2m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 10-->
+<div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" aria-labelledby="portfolioModal10" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Pittosporum eugenoides</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Lemonwood - Tarata</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/tarata.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Hardy, bushy trees with large light green leaves.</p>
+							<p class="mb-4">5m x 3m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 11-->
+<div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" aria-labelledby="portfolioModal11" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Pittosporum tenuifolium</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Kohuhu</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/kohuhu.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Easily grown, hardy small leaf Pittosporum.</p>
+							<p class="mb-4">5m x 3m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Portfolio Modal 12-->
+<div class="portfolio-modal modal fade" id="portfolioModal12" tabindex="-1" aria-labelledby="portfolioModal12" aria-hidden="true">
+	<div class="modal-dialog modal-xl">
+		<div class="modal-content">
+			<div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+			<div class="modal-body text-center pb-5">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<!-- Portfolio Modal - Title-->
+							<h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Pseudopanax arboreus</h2><br>
+							<h3 class="text-secondary text-uppercase mb-0">Five Finger</h3>
+							<!-- Icon Divider-->
+							<div class="divider-custom">
+								<div class="divider-custom-line"></div>
+								<div class="divider-custom-icon">
+									<i class="fas fa-seedling"></i>
+								</div>
+								<div class="divider-custom-line"></div>
+							</div>
+							<!-- Portfolio Modal - Image-->
+							<img class="img-fluid rounded mb-5" src="{{ '/assets/img/plants/fivefinger.jpg' | relative_url }}" alt="..." />
+							<!-- Portfolio Modal - Text-->
+							<p class="mb-4">Rapid growing dark green glossy leaves. Grows across centre of North Island. </p>
+							<p class="mb-4">3m x 1.5m</p>
+							<button class="btn btn-primary" data-bs-dismiss="modal">
+								<i class="fas fa-xmark fa-fw"></i>
+								Close Window
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
