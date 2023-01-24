@@ -9,6 +9,7 @@
 .env.test.local
 .eslintrc
 .git
+.jekyll-cache
 .jekyll-metadata
 .pnp
 .pnp.js
