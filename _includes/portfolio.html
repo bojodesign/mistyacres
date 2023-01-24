@@ -25,114 +25,122 @@
 			</div>
 			<div class="divider-custom-line"></div>
 		</div>
-		<!-- Portfolio Grid Items-->
-		<div class="row justify-content-center">
-			<!-- Portfolio Item 1-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
-					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/karamu.jpg' | relative_url }}" alt="..." />
-				</div>
+		<div class="d-flex justify-content-center">
+			<div class="tabs">
+				<button class="btn btn-primary filter active" id="filt" href="" data-rel="aval">Available</button>
+				<button class="btn btn-primary filter" id="filt" href="" data-rel="oos">Unavailable</button>
 			</div>
-			<!-- Portfolio Item 2-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+		</div>
+		<div class="work">
+			<!-- Portfolio Grid Items-->
+			<div class="row justify-content-center">
+				<!-- Portfolio Item 1-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/karamu.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/tikouka.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 3-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 2-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/tikouka.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/akeake.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 4-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 3-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/akeake.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/pakeake.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 5-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 4-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/pakeake.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/kapuka.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 6-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 5-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/kapuka.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/kanuka.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 7-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 6-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/kanuka.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/manuka.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 8-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 7-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/manuka.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/mountainflax.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 9-->
-			<div class="col-md-6 col-lg-4 mb-5">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 8-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal8">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/mountainflax.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/harakeke.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 10-->
-			<div class="col-md-6 col-lg-4">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 9-->
+				<div class="col-md-6 col-lg-4 mb-5 portfolio-item scale aval">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal9">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/harakeke.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/tarata.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 11-->
-			<div class="col-md-6 col-lg-4">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 10-->
+				<div class="col-md-6 col-lg-4 portfolio-item scale oos">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal10">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/tarata.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/kohuhu.jpg' | relative_url }}" alt="..." />
 				</div>
-			</div>
-			<!-- Portfolio Item 12-->
-			<div class="col-md-6 col-lg-4">
-				<div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal12">
-					<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-						<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+				<!-- Portfolio Item 11-->
+				<div class="col-md-6 col-lg-4 portfolio-item scale oos">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal11">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/kohuhu.jpg' | relative_url }}" alt="..." />
 					</div>
-					<img class="img-fluid" src="{{ '/assets/img/plants/fivefinger.jpg' | relative_url }}" alt="..." />
+				</div>
+				<!-- Portfolio Item 12-->
+				<div class="col-md-6 col-lg-4 portfolio-item scale oos">
+					<div class="mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal12">
+						<div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+							<div class="portfolio-item-caption-content text-center text-red"><i class="fas fa-plus fa-3x"></i></div>
+						</div>
+						<img class="img-fluid" src="{{ '/assets/img/plants/fivefinger.jpg' | relative_url }}" alt="..." />
+					</div>
 				</div>
 			</div>
 		</div>
