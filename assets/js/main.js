@@ -51,14 +51,6 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
-    // Google Maps
-    function initMap() {
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 8,
-            center
-        });
-    }
-
     // Netlify admin
     if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", (user) => {
