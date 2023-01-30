@@ -11518,13 +11518,17 @@ html {
 /* Portfolio */
 
 .portfolio .portfolio-item {
-  cursor: pointer;
   position: relative;
   display: none;
-  max-width: 25rem;
+  max-width: 50%;
   border-radius: 0.5rem;
   overflow: hidden;
+  &:not(.text-start)
+  {
+    cursor: pointer;
+  }
 }
+
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
@@ -11559,7 +11563,7 @@ html {
 
 //Filter
 .tabs {
-	padding-bottom: 1rem;
+	padding-bottom: 1.5rem;
 }
 button.btn.filter {
 	color: #fff;
