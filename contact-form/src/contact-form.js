@@ -9,7 +9,7 @@ const encode = (data) => {
 class ContactForm extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = { name: "", email: "", subject: "", message: "", success: false, failure: false };
+		this.state = { name: "", email: "", phone: "", message: "", success: false, failure: false };
 	}
 
 	handleSubmit = (e) => {
@@ -22,7 +22,7 @@ class ContactForm extends React.Component {
 				this.setState({
 					name: "",
 					email: "",
-					subject: "",
+					phone: "",
 					message: "",
 					success: true,
 					failure: false
@@ -36,9 +36,9 @@ class ContactForm extends React.Component {
 	handleChange = (e) => this.setState({ [e.target.name]: e.target.value });
 
 	render() {
-		const { name, email, subject, message, success, failure } = this.state;
+		const { name, email, phone, message, success, failure } = this.state;
 		return (
-			<form name="contact" onSubmit={this.handleSubmit} data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bots-r-us">
+			<form name="contact" onSubmit={this.handleSubmit} data-netlify="true" netlify-honeypot="bots-r-us">
 				<div className="row justify-content-center">
 					{success && <button type='button' className="alert alert-dismissible contact-close" data-bs-dismiss='alert' aria-hidden='true'>
 						<div className="animate__animated animate__fadeIn contact-success">We have received your message.
@@ -67,17 +67,16 @@ class ContactForm extends React.Component {
 								<div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
 							</div>
 							<div className="form-floating mb-3">
-								<input type="tel" className="form-control" placeholder="(123) 456-7890" htmlFor="subject" name="subject" value={subject} onChange={this.handleChange} data-sb-validations="required" required />
-								<label for="phone" className="required">Phone number</label>
-								<div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+								<input type="tel" className="form-control" placeholder="(123) 456-7890" htmlFor="phone" name="phone" value={phone} onChange={this.handleChange} />
+								<label for="phone">Phone number</label>
+								<div class="invalid-feedback">A phone number is required.</div>
 							</div>
 							<div className="form-floating mb-3">
 								<textarea className="form-control message" placeholder="Enter your message here..." htmlFor="message" name="message" value={message} onChange={this.handleChange} data-sb-validations="required" required></textarea>
 								<label for="message" className="required">Message</label>
 								<div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
 							</div>
-							<div type="submit" className="captcha" data-netlify-recaptcha="true"></div>
-							<button className="btn btn-primary btn-xl" id="submitButton" data-sitekey="reCAPTCHA_site_key" data-callback="onSubmit" data-action="submit">Send</button>
+							<button className="btn btn-primary btn-xl" id="submitButton" data-callback="onSubmit" data-action="submit">Send</button>
 						</div>
 					</div>
 				</div>
