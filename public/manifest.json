@@ -1,0 +1,36 @@
+{
+  "short_name": "Misty Acres",
+  "name": "Misty Acres Taupo Nursery",
+  "description": "Misty Acres is a native plant nursery located in the Taupo region of New Zealand, growing for the revegetation market.",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "1024x1024, 512x512, 192x192, 64x64 32x32 24x24 16x16"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "64x64 32x32 24x24 16x16"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "logo1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#00cc44",
+  "background_color": "#b3d6ff"
+}
