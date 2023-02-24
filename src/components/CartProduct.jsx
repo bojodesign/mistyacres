@@ -1,8 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useContext } from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import { CartContext } from "../CartContext";
-import { useContext } from "react";
 import { getProductData } from "../productsStore";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function CartProduct(props) {
 	const cart = useContext(CartContext);

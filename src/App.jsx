@@ -1,6 +1,6 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFileCirclePlus, faFileCircleXmark, faMinus, faPlus, faReceipt, faSeedling, faX } from '@fortawesome/free-solid-svg-icons';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import CartProvider from './CartContext';
 import About from './components/About';
 import Contact from './components/Contact';
