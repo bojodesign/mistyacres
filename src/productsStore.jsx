@@ -10,7 +10,7 @@ const productsArray = [
 		size: "2m x 1.5m",
 		price: 4.25,
 		bulkprice: 4.00
-	},	
+	},
 	{
 		id: "2",
 		thumb: "/assets/img/plants/tikouka_thumb.jpg",
@@ -22,7 +22,7 @@ const productsArray = [
 		size: "6m x 2m",
 		price: 4.25,
 		bulkprice: 4.00
-	},	
+	},
 	{
 		id: "3",
 		thumb: "/assets/img/plants/akeake_thumb.jpg",
@@ -46,7 +46,7 @@ const productsArray = [
 		size: "6m x 2.5m",
 		price: 4.25,
 		bulkprice: 4.00
-	},	
+	},
 	{
 		id: "5",
 		thumb: "/assets/img/plants/kapuka_thumb.jpg",
@@ -58,7 +58,7 @@ const productsArray = [
 		size: "3m x 2m",
 		price: 4.25,
 		bulkprice: 4.00
-	},	
+	},
 	{
 		id: "6",
 		thumb: "/assets/img/plants/kanuka_thumb.jpg",
@@ -82,7 +82,7 @@ const productsArray = [
 		size: "4m x 3m",
 		price: 4.25,
 		bulkprice: 4.00
-	},	
+	},
 	{
 		id: "8",
 		thumb: "/assets/img/plants/mountainflax_thumb.jpg",
@@ -94,7 +94,7 @@ const productsArray = [
 		size: "1m x 1m",
 		price: 4.25,
 		bulkprice: 4.00
-	},	
+	},
 	{
 		id: "9",
 		thumb: "/assets/img/plants/harakeke_thumb.jpg",
@@ -118,7 +118,7 @@ const productsArray = [
 		size: "5m x 3m",
 		price: 4.25,
 		bulkprice: 4.00
-	},	
+	},
 	{
 		id: "11",
 		thumb: "/assets/img/plants/kohuhu_thumb.jpg",
@@ -130,7 +130,7 @@ const productsArray = [
 		size: "5m x 3m",
 		price: 4.25,
 		bulkprice: 4.00
-	},	
+	},
 	{
 		id: "12",
 		thumb: "/assets/img/plants/fivefinger_thumb.jpg",
@@ -179,4 +179,16 @@ function getProductData(id) {
 	return productData;
 }
 
-export {productsArray, getProductData};
+/**
+ * @param {{id: string, quantity: number}} item
+ */
+const getItemPrice = (item) => {
+	const productData = getProductData(item.id);
+	// If the quantity exeeds 100 and there's a bulk price for the product, use that
+	if (item.quantity >= 100 && productData.bulkprice) {
+		return productData.bulkprice * item.quantity;
+	}
+	return productData.price * item.quantity;
+}
+
+export { productsArray, getProductData, getItemPrice };
