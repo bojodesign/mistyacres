@@ -24,12 +24,12 @@ function Contact() {
 				</div>
 				<form name="contact" data-netlify="true" netlify-honeypot="bots-r-us" hidden>
 					<input type="text" name="bots-r-us" />
-					<input type="text" name="form-name" value="contact" />
-					<input type="number" name="totalCost" value={totalCost} />
-					<input type="number" name="productsCount" value={productsCount} />
-					<input type="number" name="costBeforeDiscount" value={costBeforeDiscount} />
+					<input type="hidden" name="form-name" value="contact" />
+					<input type="hidden" name="totalCost" value={totalCost} />
+					<input type="hidden" name="productsCount" value={productsCount} />
+					<input type="hidden" name="costBeforeDiscount" value={costBeforeDiscount} />
 					{items.map((item) => (
-						<input key={item.id} type="text" name="products[]" value={JSON.stringify({
+						<input key={item.id} type="hidden" name="products[]" value={JSON.stringify({
 							...item,
 							title: getProductData(item.id).title,
 							price: getItemPrice(item),
