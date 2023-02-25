@@ -11,10 +11,15 @@ export default function ContactForm() {
 	const { costBeforeDiscount, productsCount, totalCost } = useCartSummary();
 
 	const handleSubmit = (e) => {
+		if (status === 'submitting') {
+			return;
+		}
+		const formData = new FormData(e.target);
+
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: FormData,
+			body: formData,
 		})
 			.then((res) => {
 				if (res.ok) {
