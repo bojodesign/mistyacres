@@ -22,7 +22,7 @@ function Contact() {
 					</div>
 					<div className="divider-custom-line"></div>
 				</div>
-				<form name="contact-form" data-netlify="true" netlify-honeypot="bots-r-us" hidden>
+				<form name="contact" data-netlify="true" netlify-honeypot="bots-r-us" hidden>
 					<input type="text" name="bots-r-us" />
 					<input type="hidden" name="form-name" value="contact" />
 					<input type="hidden" name="totalCost" value={totalCost} />
