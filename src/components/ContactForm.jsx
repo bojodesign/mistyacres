@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import { CartContext } from '../CartContext';
 import useCartSummary from '../hooks/useCartSummary';
 import { getItemPrice, getProductData } from '../productsStore';
-import QuoteSummary from "./QuoteSummary";
+import QuoteSummary from './QuoteSummary';
 
 export default function ContactForm() {
 	const [status, setStatus] = useState('idle');
@@ -16,10 +16,13 @@ export default function ContactForm() {
 		}
 		const formData = new FormData(e.target);
 
+		// convert to x-www-form-urlencoded using URLSearchParams
+		const params = new URLSearchParams(formData);
+
 		fetch('/', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: formData,
+			body: params.toString(),
 		})
 			.then((res) => {
 				if (res.ok) {
@@ -35,7 +38,7 @@ export default function ContactForm() {
 
 	// Render Contact Form
 	return (
-		<form name="contact" onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bots-r-us">
+		<form onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bots-r-us">
 			<input type="hidden" name="form-name" value="contact" />
 			<input type="hidden" name="totalCost" value={totalCost} />
 			<input type="hidden" name="productsCount" value={productsCount} />
