@@ -191,4 +191,9 @@ const getItemPrice = (item) => {
 	return productData.price * item.quantity;
 }
 
-export { productsArray, getProductData, getItemPrice };
+const getItemQuantity = (item) => {
+	return item.quantity;
+}
+
+export { productsArray, getProductData, getItemPrice, getItemQuantity };
+

@@ -2,7 +2,7 @@ import { useContext, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { CartContext } from '../CartContext';
 import useCartSummary from '../hooks/useCartSummary';
-import { getItemPrice, getProductData } from '../productsStore';
+import { getItemPrice, getItemQuantity, getProductData } from '../productsStore';
 import QuoteSummary from './QuoteSummary';
 
 export default function ContactForm() {
@@ -45,8 +45,8 @@ export default function ContactForm() {
 			<input type="hidden" name="costBeforeDiscount" value={costBeforeDiscount} />
 			{items.map((item) => (
 				<input key={item.id} type="hidden" name="products[]" value={JSON.stringify({
-					...item,
 					title: getProductData(item.id).title,
+					quantity: getItemQuantity(item),
 					price: getItemPrice(item),
 				})}
 				/>
