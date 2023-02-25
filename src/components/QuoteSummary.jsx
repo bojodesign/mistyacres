@@ -16,7 +16,7 @@ function QuoteSummary() {
 
 	return (
 		<div className="form-floating mb-3 quote-summary">
-			<div className="btn-light form-control quote-label" onClick={() => setOpen(!open)} aria-controls="quote" aria-expanded={open}>Quote Summary: {productsCount} items</div>
+			<div className="btn-light quote-label" onClick={() => setOpen(!open)} aria-controls="quote" aria-expanded={open}>Quote Summary: {productsCount} items</div>
 			<Collapse in={open}>
 				<div className="px-3" htmlFor="quote" name="quote" id="quote">
 					{productsCount > 0 ? (
