@@ -39,20 +39,18 @@ export default function ContactForm() {
 	// Render Contact Form
 	return (
 		<form onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bots-r-us">
-			<div className="quote-summary-hidden">
-				<input type="text" name="form-name" value="contact" />
-				<input type="number" name="totalCost" value={totalCost} />
-				<input type="number" name="productsCount" value={productsCount} />
-				<input type="number" name="costBeforeDiscount" value={costBeforeDiscount} />
-				{items.map((item) => (
-					<input key={item.id} type="text" name="products[]" value={JSON.stringify({
-						...item,
-						title: getProductData(item.id).title,
-						price: getItemPrice(item),
-					})}
-					/>
-				))}
-			</div>
+			<input type="hidden" name="form-name" value="contact" />
+			<input type="hidden" name="totalCost" value={totalCost} />
+			<input type="hidden" name="productsCount" value={productsCount} />
+			<input type="hidden" name="costBeforeDiscount" value={costBeforeDiscount} />
+			{items.map((item) => (
+				<input key={item.id} type="hidden" name="products[]" value={JSON.stringify({
+					...item,
+					title: getProductData(item.id).title,
+					price: getItemPrice(item),
+				})}
+				/>
+			))}
 			<Row className="justify-content-center">
 				{status === 'submitted' && (
 					<button type='button' className="alert alert-dismissible contact-close" data-bs-dismiss='alert' aria-hidden='true'>
