@@ -29,7 +29,7 @@ function Contact() {
 					<input type="number" name="productsCount" value={productsCount} />
 					<input type="number" name="costBeforeDiscount" value={costBeforeDiscount} />
 					{items.map((item) => (
-						<input key={item.id} type="hidden" name="products[]" value={JSON.stringify({
+						<input key={item.id} type="text" name="products[]" value={JSON.stringify({
 							...item,
 							title: getProductData(item.id).title,
 							price: getItemPrice(item),
