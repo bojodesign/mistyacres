@@ -39,9 +39,9 @@ export default function ContactForm() {
 	// Render Contact Form
 	return (
 		<form onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bots-r-us">
-			<input type="hidden" name="form-name" value="contact" />
-			<input type="hidden" name="totalCost" value={totalCost} />
-			<input type="hidden" name="productsCount" value={productsCount} />
+			<input type="hidden" htmlFor="form-name" name="form-name" value="contact" />
+			<input type="hidden" htmlFor="total-cost" name="totalCost" value={totalCost} />
+			<input type="hidden" htmlFor="products-count" name="productsCount" value={productsCount} />
 			{items.map((item) => (
 				<input key={item.id} type="hidden" name="products[]" value={JSON.stringify({
 					title: getProductData(item.id).title,
@@ -68,7 +68,7 @@ export default function ContactForm() {
 						<input type="hidden" name="form-name" value="contact" />
 						<div className="form-floating mb-3 bots-r-us">
 							<input type="text" className="form-control" placeholder="Do Not Fill" name="bots-r-us" />
-							<label htmlFor="name" className="required">Do Not Fill</label>
+							<label htmlFor="spam" className="required">Do Not Fill</label>
 						</div>
 						<QuoteSummary />
 						<div className="form-floating mb-3">
