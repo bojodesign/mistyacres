@@ -39,7 +39,7 @@ function ProductCard(props) {
 					<Card.Subtitle className="mb-2 text-secondary text-uppercase fw-bold">{product.subtitle}</Card.Subtitle>
 				</Card.Header>
 				<Card.Body className="d-flex align-items-start text-start">
-					<Card.Img src={product.thumb} onClick={handleShowImage} />
+					<Card.Img src={product.thumb} onClick={handleShowImage} alt={`${product.title} / ${product.subtitle}`} />
 					<div className="ms-3 w-75">
 						<Card.Text className="mb-2 text-black">{product.description}</Card.Text>
 						<Card.Text className="text-black">{product.size}</Card.Text>
