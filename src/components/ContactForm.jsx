@@ -8,7 +8,7 @@ import QuoteSummary from './QuoteSummary';
 export default function ContactForm() {
 	const [status, setStatus] = useState('idle');
 	const { items } = useContext(CartContext);
-	const { costBeforeDiscount, productsCount, totalCost } = useCartSummary();
+	const { productsCount, totalCost } = useCartSummary();
 
 	const handleSubmit = (e) => {
 		if (status === 'submitting') {
@@ -42,7 +42,6 @@ export default function ContactForm() {
 			<input type="hidden" name="form-name" value="contact" />
 			<input type="hidden" name="totalCost" value={totalCost} />
 			<input type="hidden" name="productsCount" value={productsCount} />
-			<input type="hidden" name="costBeforeDiscount" value={costBeforeDiscount} />
 			{items.map((item) => (
 				<input key={item.id} type="hidden" name="products[]" value={JSON.stringify({
 					title: getProductData(item.id).title,

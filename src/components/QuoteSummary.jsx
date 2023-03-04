@@ -8,7 +8,7 @@ function QuoteSummary() {
 
 	const [open, setOpen] = useState(false);
 	const cart = useContext(CartContext);
-	const { totalCost, costBeforeDiscount, productsCount } = useCartSummary();
+	const { totalCost, productsCount } = useCartSummary();
 
 	if (productsCount === 0) {
 		return null;
@@ -34,15 +34,7 @@ function QuoteSummary() {
 
 							<h5 className="pb-3">
 								{' '}
-								Total:&nbsp;
-								{costBeforeDiscount === totalCost ? (
-									<span>{totalCost}</span>
-								) : (
-									<>
-										<del>{costBeforeDiscount}</del>&nbsp;
-										<ins>{totalCost}</ins>
-									</>
-								)}
+								<span>Total:&nbsp;{totalCost}</span>
 							</h5>
 						</>
 					) : (

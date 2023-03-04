@@ -27,7 +27,6 @@ function Contact() {
 					<input type="hidden" name="form-name" value="contact" />
 					<input type="hidden" name="totalCost" value={totalCost} />
 					<input type="hidden" name="productsCount" value={productsCount} />
-					<input type="hidden" name="costBeforeDiscount" value={costBeforeDiscount} />
 					{items.map((item) => (
 						<input key={item.id} type="hidden" name="products[]" value={JSON.stringify({
 							...item,
