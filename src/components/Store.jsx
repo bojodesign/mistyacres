@@ -33,8 +33,18 @@ function Store() {
 					</Row>
 					<div className="d-flex justify-content-center">
 						<div className="tabs">
-							<Button className="mx-2 btn btn-primary bg-red fw-bold" id="filt" active={filter === 'aval'} onClick={() => setFilter("aval")}>Available</Button>
-							<Button className="mx-2 btn btn-primary bg-red fw-bold" id="filt" active={filter === 'oos'} onClick={() => setFilter("oos")}>Unavailable</Button>
+							<Button
+								className="mx-2 btn btn-primary bg-red fw-bold"
+								id="filt"
+								aria-label="Available"
+								active={filter === 'aval'}
+								onClick={() => setFilter("aval")}>Available</Button>
+							<Button
+								className="mx-2 btn btn-primary bg-red fw-bold"
+								id="filt"
+								aria-label="Unavailable"
+								active={filter === 'oos'}
+								onClick={() => setFilter("oos")}>Unavailable</Button>
 						</div>
 					</div>
 					<Row xs={1} md={2} className="g-1 card-background">

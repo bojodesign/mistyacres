@@ -52,28 +52,36 @@ function ProductCard(props) {
 										<Button
 											sm="4"
 											onClick={() => cart.addOneToCart(product.id)}
+											aria-label="Add One"
 											className="ms-2 bg-green text-black">
 											<FontAwesomeIcon icon="fa-plus" />
 										</Button>
 										<Button
 											sm="4"
-											onClick={() => cart.removeOneFromCart(product.id)} className="ms-1 bg-green text-black">
+											onClick={() => cart.removeOneFromCart(product.id)}
+											aria-label="Remove One"
+											className="ms-1 bg-green text-black">
 											<FontAwesomeIcon icon="fa-minus" />
 										</Button>
 										<Button
 											sm="4"
 											variant="danger"
-											onClick={() => cart.deleteFromCart(product.id)} className="ms-2 text-nowrap bg-red">
+											onClick={() => cart.deleteFromCart(product.id)}
+											aria-label="Remove All"
+											className="ms-2 text-nowrap bg-red">
 											<FontAwesomeIcon icon="fa-x" />
 										</Button>
 										<div className="w-100 mb-2"></div>
 										<div className="ps-2">
-											<input className="quantity" value={productQuantity} type="number" onChange={(e) => {
-												cart.setProductQuantity(
-													product.id,
-													e.target.valueAsNumber
-												);
-											}}
+											<input className="quantity"
+												value={productQuantity}
+												type="number"
+												onChange={(e) => {
+													cart.setProductQuantity(
+														product.id,
+														e.target.valueAsNumber
+													);
+												}}
 											/>
 										</div>
 									</Col>
@@ -85,6 +93,7 @@ function ProductCard(props) {
 									<Button
 										variant="primary"
 										onClick={() => cart.addToCart({ id: product.id, quantity: quantityInput })}
+										aria-label="Add to Cart"
 										className="ms-2 me-0 bg-green text-black">
 										<FontAwesomeIcon icon="fa-plus" />
 									</Button>
