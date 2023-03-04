@@ -103,7 +103,7 @@ export default function Contact() {
 									<label htmlFor="message" className="required">Message</label>
 									<div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
 								</div>
-								<button disabled={status === 'submitting'} className="btn btn-primary btn-xl" id="submitButton" data-callback="onSubmit" data-action="submit">Send</button>
+								<button disabled={status === 'submitting'} className="btn btn-primary btn-xl" id="submitButton" aria-label="send" data-callback="onSubmit" data-action="submit">Send</button>
 							</div>
 						</Col>
 					</Row>
