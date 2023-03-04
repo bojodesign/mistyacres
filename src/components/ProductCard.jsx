@@ -74,6 +74,7 @@ function ProductCard(props) {
 										<div className="w-100 mb-2"></div>
 										<div className="ps-2">
 											<input className="quantity"
+												htmlFor="quantity"
 												value={productQuantity}
 												type="number"
 												onChange={(e) => {
@@ -100,7 +101,12 @@ function ProductCard(props) {
 								</Col>
 								<div className="w-100 mb-2"></div>
 								<Col className="ps-2">
-									<input className="quantity" value={quantityInput} type="number" onChange={(e) => setQuantityInput(e.target.valueAsNumber)} />
+									<input
+										className="quantity"
+										htmlFor="quantity"
+										value={quantityInput}
+										type="number"
+										onChange={(e) => setQuantityInput(e.target.valueAsNumber)} />
 								</Col>
 							</Row>
 						)}
