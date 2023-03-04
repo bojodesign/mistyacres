@@ -35,13 +35,13 @@ function Store() {
 						<div className="tabs">
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
-								id="filt"
+								id="aval"
 								aria-label="Available"
 								active={filter === 'aval'}
 								onClick={() => setFilter("aval")}>Available</Button>
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
-								id="filt"
+								id="oos"
 								aria-label="Unavailable"
 								active={filter === 'oos'}
 								onClick={() => setFilter("oos")}>Unavailable</Button>
