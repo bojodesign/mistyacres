@@ -3,7 +3,7 @@ const productsArray = [
 		id: "1",
 		thumb: "/assets/img/plants/karamu_thumb.jpg",
 		image: "/assets/img/plants/karamu.jpg",
-		category: ['aval',],
+		category: ['small',],
 		title: "Coprosma robusta",
 		subtitle: "Karamu",
 		description: <>Easily grown shrub. Glossy dark green leaves. Bright orange-red berries on female plants.</>,
@@ -14,7 +14,7 @@ const productsArray = [
 		id: "2",
 		thumb: "/assets/img/plants/tikouka_thumb.jpg",
 		image: "/assets/img/plants/tikouka.jpg",
-		category: ['aval',],
+		category: ['small',],
 		title: "Cordyline australis",
 		subtitle: "Cabbage Tree - Ti Kouka",
 		description: <>Hardy sword leaf type palm with tall trunk. Sprays of white flowers in late spring.</>,
@@ -25,7 +25,7 @@ const productsArray = [
 		id: "3",
 		thumb: "/assets/img/plants/akeake_thumb.jpg",
 		image: "/assets/img/plants/akeake.jpg",
-		category: ['aval',],
+		category: ['small',],
 		title: "Dodonaea viscosa",
 		subtitle: "Ake Ake",
 		description: <>Hardy green bushy large shrub. Excellent for hedges.</>,
@@ -36,7 +36,7 @@ const productsArray = [
 		id: "4",
 		thumb: "/assets/img/plants/pakeake_thumb.jpg",
 		image: "/assets/img/plants/pakeake.jpg",
-		category: ['aval',],
+		category: ['small',],
 		title: "Dodonaea viscosa purpurea",
 		subtitle: "Purple Ake Ake",
 		description: <>Hardy, fast growing bushy shrub or small tree. Purple/burgundy leaves. Great for hedges.</>,
@@ -47,7 +47,7 @@ const productsArray = [
 		id: "5",
 		thumb: "/assets/img/plants/kapuka_thumb.jpg",
 		image: "/assets/img/plants/kapuka.jpg",
-		category: ['oos',],
+		category: ['small',],
 		title: "Griselinia littoralis",
 		subtitle: "Native Broadleaf - Kapuka",
 		description: <>Glossy green, leathery leaves. Hardy shrub/small tree.</>,
@@ -58,7 +58,7 @@ const productsArray = [
 		id: "6",
 		thumb: "/assets/img/plants/kanuka_thumb.jpg",
 		image: "/assets/img/plants/kanuka.jpg",
-		category: ['oos',],
+		category: ['small',],
 		title: "Kunzea ericoides",
 		subtitle: "Kanuka",
 		description: <>Great for re-vegetation and can handle dry ground. Small leaves with bright white flowers.</>,
@@ -69,7 +69,7 @@ const productsArray = [
 		id: "7",
 		thumb: "/assets/img/plants/manuka_thumb.jpg",
 		image: "/assets/img/plants/manuka.jpg",
-		category: ['oos',],
+		category: ['small',],
 		title: "Leptospermum scoparium",
 		subtitle: "Tea Tree - Manuka",
 		description: <>Similar to Kanuka. Slightly larger leaves. Can handle moist soils.</>,
@@ -80,7 +80,7 @@ const productsArray = [
 		id: "8",
 		thumb: "/assets/img/plants/mountainflax_thumb.jpg",
 		image: "/assets/img/plants/mountainflax.jpg",
-		category: ['aval',],
+		category: ['small',],
 		title: "Phormium cookianum",
 		subtitle: "Mountain Flax",
 		description: <>Smaller growing flax than P. tenax. Good on hills, cliffs, dry areas.</>,
@@ -91,7 +91,7 @@ const productsArray = [
 		id: "9",
 		thumb: "/assets/img/plants/harakeke_thumb.jpg",
 		image: "/assets/img/plants/harakeke.jpg",
-		category: ['aval',],
+		category: ['small',],
 		title: "Phormium tenax",
 		subtitle: "NZ Flax - Harakeke",
 		description: <>Well-known plant with green sword leaves. Handles wet areas.</>,
@@ -102,7 +102,7 @@ const productsArray = [
 		id: "10",
 		thumb: "/assets/img/plants/tarata_thumb.jpg",
 		image: "/assets/img/plants/tarata.jpg",
-		category: ['oos',],
+		category: ['small',],
 		title: "Pittosporum eugenoides",
 		subtitle: "Lemonwood - Tarata",
 		description: <>Hardy, bushy trees with large light green leaves.</>,
@@ -113,7 +113,7 @@ const productsArray = [
 		id: "11",
 		thumb: "/assets/img/plants/kohuhu_thumb.jpg",
 		image: "/assets/img/plants/kohuhu.jpg",
-		category: ['oos',],
+		category: ['small',],
 		title: "Pittosporum tenuifolium",
 		subtitle: "Kohuhu",
 		description: <>Easily grown, hardy small leaf Pittosporum.</>,
@@ -124,7 +124,7 @@ const productsArray = [
 		id: "12",
 		thumb: "/assets/img/plants/fivefinger_thumb.jpg",
 		image: "/assets/img/plants/fivefinger.jpg",
-		category: ['aval',],
+		category: ['small',],
 		title: "Pseudopanax arboreus",
 		subtitle: "Five Finger",
 		description: <>Rapid growing dark green glossy leaves. Grows across centre of north island.</>,
@@ -135,7 +135,7 @@ const productsArray = [
 		id: "13",
 		thumb: "/assets/img/plants/pukio_thumb.jpg",
 		image: "/assets/img/plants/pukio.jpg",
-		category: ['oos',],
+		category: ['small',],
 		title: "Carex virgata",
 		subtitle: "Pukio",
 		description: <>Hardy large growing grass that can take wet or dry soils. Wind, frost, sun or shade.</>,
@@ -146,7 +146,7 @@ const productsArray = [
 		id: "14",
 		thumb: "/assets/img/plants/kowhai_thumb.jpg",
 		image: "/assets/img/plants/kowhai.jpg",
-		category: ['oos',],
+		category: ['small',],
 		title: "Sophora tetraptera",
 		subtitle: "Kowhai",
 		description: <>Well-known tree with distinctive yellow flowers through spring. Requires free draining, moisture-retentive soil sheltered from cold wind.</>,
@@ -165,17 +165,5 @@ function getProductData(id) {
 	return productData;
 }
 
-/**
- * @param {{id: string, quantity: number}} item
- */
-const getItemPrice = (item) => {
-	const productData = getProductData(item.id);
-	return productData.price * item.quantity;
-}
-
-const getItemQuantity = (item) => {
-	return item.quantity;
-}
-
-export { productsArray, getProductData, getItemPrice, getItemQuantity };
+export { productsArray, getProductData };
 

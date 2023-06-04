@@ -1,15 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import { CartContext } from '../CartContext';
-import useCartSummary from '../hooks/useCartSummary';
-import { getItemPrice, getItemQuantity, getProductData } from '../productsStore';
-import QuoteSummary from './QuoteSummary';
 
 export default function Contact() {
 	const [status, setStatus] = useState('idle');
-	const { items } = useContext(CartContext);
-	const { productsCount, totalCost } = useCartSummary();
 
 	const handleSubmit = (e) => {
 		if (status === 'submitting') {
@@ -51,16 +45,6 @@ export default function Contact() {
 				</div>
 				<form onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bots-r-us">
 					<input type="hidden" htmlFor="form-name" name="form-name" value="contact" />
-					<input type="hidden" htmlFor="total-cost" name="totalCost" value={totalCost} />
-					<input type="hidden" htmlFor="products-count" name="productsCount" value={productsCount} />
-					{items.map((item) => (
-						<input key={item.id} type="hidden" name="products[]" value={JSON.stringify({
-							title: getProductData(item.id).title,
-							quantity: getItemQuantity(item),
-							price: getItemPrice(item),
-						})}
-						/>
-					))}
 					<Row className="justify-content-center">
 						{status === 'submitted' && (
 							<button type='button' className="alert alert-dismissible contact-close" data-bs-dismiss='alert' aria-hidden='true'>
@@ -81,7 +65,6 @@ export default function Contact() {
 									<input type="text" className="form-control" placeholder="Do Not Fill" name="bots-r-us" />
 									<label htmlFor="spam" className="required">Do Not Fill</label>
 								</div>
-								<QuoteSummary />
 								<div className="form-floating mb-3">
 									<input type="text" className="form-control" placeholder="Your name" htmlFor="name" name="name" data-sb-validations="required" required />
 									<label htmlFor="name" className="required">Your name</label>

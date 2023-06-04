@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { productsArray } from '../productsStore';
 import ProductCard from './ProductCard';
 
 function Store() {
-	const [filter, setFilter] = useState('aval');
+	const [filter, setFilter] = useState('small');
 
 	const filteredProducts = productsArray.filter((product) =>
 		product.category.includes(filter)
@@ -26,27 +26,27 @@ function Store() {
 					</div>
 					<Row className="text-secondary mb-4">
 						<Col className="text-center">
-							<div className="lead">Please select the plants you would like to order and submit the contact form.</div>
-							<div className="lead">We will get back to you shortly with a final quote and delivery cost.</div>
+							<div className="lead">Please request the plants you would like to order via the contact form.</div>
+							<div className="lead">We will get back to you shortly with availability, a final quote and delivery cost.</div>
 							<div className="lead">Minimum order of 50 plants of any kind.</div>
 						</Col>
 					</Row>
-					<div className="d-flex justify-content-center">
+					{/* <div className="d-flex justify-content-center">
 						<div className="tabs">
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
-								id="aval"
+								id="small"
 								aria-label="Available"
-								active={filter === 'aval'}
-								onClick={() => setFilter("aval")}>Available</Button>
+								active={filter === 'small'}
+								onClick={() => setFilter("small")}>Available</Button>
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
-								id="oos"
+								id="big"
 								aria-label="Unavailable"
-								active={filter === 'oos'}
-								onClick={() => setFilter("oos")}>Unavailable</Button>
+								active={filter === 'big'}
+								onClick={() => setFilter("big")}>Unavailable</Button>
 						</div>
-					</div>
+					</div> */}
 					<Row xs={1} md={2} className="g-1 card-background">
 						{filteredProducts.map((product) => (
 							<Col align="center" key={`product.${product.id}`}>

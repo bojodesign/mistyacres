@@ -1,21 +1,8 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useContext, useState } from 'react';
-import { Col, Container, Modal, Nav, Navbar, Row } from 'react-bootstrap';
-import { CartContext } from '../CartContext';
-import { ReactComponent as SiteLogo } from '../logo.svg';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import useScrollSpy from '../ScrollSpy';
-import CartProduct from './CartProduct';
+import { ReactComponent as SiteLogo } from '../logo.svg';
 
 function NavComponent() {
-
-	const [show, setShow] = useState(false);
-	const handleClose = () => setShow(false);
-	const handleShow = () => setShow(true);
-
-	const cart = useContext(CartContext);
-	const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
-
-	const totalCost = '$' + cart.getTotalCost().toFixed(2);
 
 	// Navbar shrink function
 	const navbarShrink = function () {
@@ -62,37 +49,9 @@ function NavComponent() {
 						<Nav.Item as="li" className="mx-2 mx-md-1">
 							<Nav.Link eventKey="contact" href="#contact" onClick={handleLinkClick}>Contact</Nav.Link>
 						</Nav.Item>
-						<Nav.Item as="li" className="mx-2 mx-md-1 btn-quote">
-							<Nav.Link className="bg-red" onClick={handleShow}><FontAwesomeIcon icon="fa-receipt" />&nbsp;({productsCount} items)</Nav.Link>
-						</Nav.Item>
 					</Nav>
 				</Container>
 			</Navbar>
-			<Modal show={show} onHide={handleClose}>
-				<Modal.Header closeButton>
-					<Modal.Title><FontAwesomeIcon icon="fa-receipt" />&nbsp;Quote Summary</Modal.Title>
-				</Modal.Header>
-				<Modal.Body>
-					{productsCount > 0 ?
-						<>
-							<Row className="justify-content-start align-items-top flex-nowrap">
-								<Col>Item</Col>
-								<Col>Quantity</Col>
-								<Col>Subtotal</Col>
-								<Col>Remove</Col>
-							</Row>
-							<hr className="mt-0 border-secondary" />
-							{cart.items.map((currentProduct, idx) => (
-								<CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
-							))}
-
-							<h5>Total:&nbsp;{totalCost}</h5>
-						</>
-						:
-						<h5 align="center">Quote is empty.</h5>
-					}
-				</Modal.Body>
-			</Modal>
 		</>
 	)
 }
