@@ -8,7 +8,7 @@ const productsArray = [
 		subtitle: "Karamu",
 		description: <>Easily grown shrub. Glossy dark green leaves. Bright orange-red berries on female plants.</>,
 		size: "2m x 1.5m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "2",
@@ -19,7 +19,7 @@ const productsArray = [
 		subtitle: "Cabbage Tree - Ti Kouka",
 		description: <>Hardy sword leaf type palm with tall trunk. Sprays of white flowers in late spring.</>,
 		size: "6m x 2m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "3",
@@ -30,7 +30,7 @@ const productsArray = [
 		subtitle: "Ake Ake",
 		description: <>Hardy green bushy large shrub. Excellent for hedges.</>,
 		size: "7m x 2.5m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "4",
@@ -41,7 +41,7 @@ const productsArray = [
 		subtitle: "Purple Ake Ake",
 		description: <>Hardy, fast growing bushy shrub or small tree. Purple/burgundy leaves. Great for hedges.</>,
 		size: "6m x 2.5m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "5",
@@ -52,7 +52,7 @@ const productsArray = [
 		subtitle: "Native Broadleaf - Kapuka",
 		description: <>Glossy green, leathery leaves. Hardy shrub/small tree.</>,
 		size: "3m x 2m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "6",
@@ -63,7 +63,7 @@ const productsArray = [
 		subtitle: "Kanuka",
 		description: <>Great for re-vegetation and can handle dry ground. Small leaves with bright white flowers.</>,
 		size: "8m x 3m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "7",
@@ -74,7 +74,7 @@ const productsArray = [
 		subtitle: "Tea Tree - Manuka",
 		description: <>Similar to Kanuka. Slightly larger leaves. Can handle moist soils.</>,
 		size: "4m x 3m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "8",
@@ -85,7 +85,7 @@ const productsArray = [
 		subtitle: "Mountain Flax",
 		description: <>Smaller growing flax than P. tenax. Good on hills, cliffs, dry areas.</>,
 		size: "1m x 1m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "9",
@@ -96,7 +96,7 @@ const productsArray = [
 		subtitle: "NZ Flax - Harakeke",
 		description: <>Well-known plant with green sword leaves. Handles wet areas.</>,
 		size: "2m x 2m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "10",
@@ -107,7 +107,7 @@ const productsArray = [
 		subtitle: "Lemonwood - Tarata",
 		description: <>Hardy, bushy trees with large light green leaves.</>,
 		size: "5m x 3m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "11",
@@ -118,7 +118,7 @@ const productsArray = [
 		subtitle: "Kohuhu",
 		description: <>Easily grown, hardy small leaf Pittosporum.</>,
 		size: "5m x 3m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "12",
@@ -129,7 +129,7 @@ const productsArray = [
 		subtitle: "Five Finger",
 		description: <>Rapid growing dark green glossy leaves. Grows across centre of north island.</>,
 		size: "3m x 1.5m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "13",
@@ -140,7 +140,7 @@ const productsArray = [
 		subtitle: "Pukio",
 		description: <>Hardy large growing grass that can take wet or dry soils. Wind, frost, sun or shade.</>,
 		size: "1m x 1m",
-		price: 4.00
+		price: 4.75
 	},
 	{
 		id: "14",
@@ -151,7 +151,7 @@ const productsArray = [
 		subtitle: "Kowhai",
 		description: <>Well-known tree with distinctive yellow flowers through spring. Requires free draining, moisture-retentive soil sheltered from cold wind.</>,
 		size: "4.5 x 3m",
-		price: 4.00
+		price: 4.75
 	},
 ]
 
@@ -165,5 +165,5 @@ function getProductData(id) {
 	return productData;
 }
 
-export { productsArray, getProductData };
+export { getProductData, productsArray };
 
