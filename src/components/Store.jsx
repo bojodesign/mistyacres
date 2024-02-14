@@ -31,22 +31,22 @@ function Store() {
 							<div className="lead">Minimum order of 50 plants. Prices are GST exclusive.</div>
 						</Col>
 					</Row>
-					{/* <div className="d-flex justify-content-center">
+					/* <div className="d-flex justify-content-center">
 						<div className="tabs">
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
 								id="small"
 								aria-label="Available"
 								active={filter === 'small'}
-								onClick={() => setFilter("small")}>Available</Button>
+								onClick={() => setFilter("small")}>Small</Button>
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
 								id="big"
 								aria-label="Unavailable"
 								active={filter === 'big'}
-								onClick={() => setFilter("big")}>Unavailable</Button>
+								onClick={() => setFilter("big")}>Large</Button>
 						</div>
-					</div> */}
+					</div> */
 					<Row xs={1} md={2} className="g-1 card-background">
 						{filteredProducts.map((product) => (
 							<Col align="center" key={`product.${product.id}`}>
