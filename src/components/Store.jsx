@@ -41,10 +41,10 @@ function Store() {
 								onClick={() => setFilter("small")}>Small</Button>
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
-								id="big"
+								id="large"
 								aria-label="Unavailable"
-								active={filter === 'big'}
-								onClick={() => setFilter("big")}>Large</Button>
+								active={filter === 'large'}
+								onClick={() => setFilter("large")}>Large</Button>
 						</div>
 					</div>
 					<Row xs={1} md={2} className="g-1 card-background">
