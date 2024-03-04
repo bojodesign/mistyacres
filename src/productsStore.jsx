@@ -197,8 +197,8 @@ const productsArray = [
 		title: "Dacrycarpus dacrydioides",
 		subtitle: "White Pine - Kahikatea",
 		description: <>Tallest native tree after many years. Thrives on moist to wet soils.</>,
-		size: "7m x 4m, 10yrs",
-		price: 15
+		size: "7m x 4m",
+		// price: 15
 	},
 	{
 		id: "l02",
@@ -208,7 +208,7 @@ const productsArray = [
 		title: "Dodonaea viscosa",
 		subtitle: "Ake Ake",
 		description: <>Hardy green bushy large shrub. Excellent for hedges.</>,
-		size: "7m x 2.5m",
+		size: "7m x 2.5m, Pb18",
 		price: 15
 	},
 	{
@@ -252,7 +252,7 @@ const productsArray = [
 		title: "Pseudopanax crassifolius",
 		subtitle: "Lancewood - Horoeka",
 		description: <>Tall stem with long serrated leaves until older when they become leathery and bushy. Hardy; avoid frost when young.</>,
-		size: "4m x 1m, 8L, 10yrs",
+		size: "4m x 1m, 8L",
 		price: 25
 	},
 	{
@@ -263,7 +263,7 @@ const productsArray = [
 		title: "Pseudopanax ferox",
 		subtitle: "Toothed Lancewood - Horoeka",
 		description: <>Tall stem with long saw tooth leaves. Bushes out with age. Hardy, avoid frost when young.</>,
-		size: "3m x 1.5m, 8L, 10yrs",
+		size: "3m x 1.5m, 8L",
 		price: 25
 	},
 	{
@@ -275,7 +275,7 @@ const productsArray = [
 		subtitle: "Kowhai",
 		description: <>Well-known tree with distinctive yellow flowers through spring. Requires free draining, moisture-retentive soil sheltered from cold wind.</>,
 		size: "4.5 x 3m",
-		price: 4.75
+		// price: 15
 	},
 ]
 
