@@ -180,8 +180,8 @@ const productsArray = [
 	// large plants
 	{
 		id: "l00",
-		thumb: "/assets/img/plants/tikouka_thumb.jpg",
-		image: "/assets/img/plants/tikouka.jpg",
+		thumb: "/assets/img/plants/large/tikouka_large_thumb.jpg",
+		image: "/assets/img/plants/large/tikouka_large.jpg",
 		category: ['large',],
 		title: "Cordyline australis",
 		subtitle: "Cabbage Tree - Ti Kouka",
@@ -202,8 +202,8 @@ const productsArray = [
 	},
 	{
 		id: "l02",
-		thumb: "/assets/img/plants/akeake_thumb.jpg",
-		image: "/assets/img/plants/akeake.jpg",
+		thumb: "/assets/img/plants/large/akeake_thumb.jpg",
+		image: "/assets/img/plants/large/akeake.jpg",
 		category: ['large',],
 		title: "Dodonaea viscosa",
 		subtitle: "Ake Ake",
@@ -213,8 +213,8 @@ const productsArray = [
 	},
 	{
 		id: "l03",
-		thumb: "/assets/img/plants/pakeake_thumb.jpg",
-		image: "/assets/img/plants/pakeake.jpg",
+		thumb: "/assets/img/plants/large/pakeake_large_thumb.jpg",
+		image: "/assets/img/plants/large/pakeake_large.jpg",
 		category: ['large',],
 		title: "Dodonaea viscosa purpurea",
 		subtitle: "Purple Ake Ake",
@@ -224,8 +224,8 @@ const productsArray = [
 	},
 	{
 		id: "l04",
-		thumb: "/assets/img/plants/tarata_thumb.jpg",
-		image: "/assets/img/plants/tarata.jpg",
+		thumb: "/assets/img/plants/large/tarata_thumb.jpg",
+		image: "/assets/img/plants/large/tarata.jpg",
 		category: ['large',],
 		title: "Pittosporum eugenoides",
 		subtitle: "Lemonwood - Tarata",
@@ -235,8 +235,8 @@ const productsArray = [
 	},
 	{
 		id: "l05",
-		thumb: "/assets/img/plants/fivefinger_thumb.jpg",
-		image: "/assets/img/plants/fivefinger.jpg",
+		thumb: "/assets/img/plants/large/fivefinger_large_thumb.jpg",
+		image: "/assets/img/plants/large/fivefinger_large.jpg",
 		category: ['large',],
 		title: "Pseudopanax arboreus",
 		subtitle: "Five Finger",
@@ -268,8 +268,8 @@ const productsArray = [
 	},
 	{
 		id: "l08",
-		thumb: "/assets/img/plants/kowhai_thumb.jpg",
-		image: "/assets/img/plants/kowhai.jpg",
+		thumb: "/assets/img/plants/large/kowhai_thumb.jpg",
+		image: "/assets/img/plants/large/kowhai.jpg",
 		category: ['large',],
 		title: "Sophora tetraptera",
 		subtitle: "Kowhai",
