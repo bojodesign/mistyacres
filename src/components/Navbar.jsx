@@ -37,7 +37,9 @@ function NavComponent() {
 			<Navbar expand="md" className="bg-secondary text-uppercase fixed-top justify-content-end" id="mainNav">
 				<Container>
 					<Navbar.Brand>
-						<SiteLogo title="Misty Acres" className="justify-content-center site-logo" />
+						<a href="#home" onClick={handleLinkClick}>
+							<SiteLogo title="Misty Acres" className="justify-content-center site-logo" />
+						</a>
 					</Navbar.Brand>
 					<Nav as="ul" variant="pills" activeKey={activeId} className="justify-content-end align-items-center" id="navbarResponsive">
 						<Nav.Item as="li" className="mx-2 mx-md-1">
