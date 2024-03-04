@@ -28,7 +28,7 @@ function Store() {
 						<Col className="text-center">
 							<div className="lead">Please request the plants you would like to order via the contact form.</div>
 							<div className="lead">We will get back to you shortly with availability, a final quote and delivery cost.</div>
-							<div className="lead">Minimum order of 50 plants. Prices are GST exclusive.</div>
+							<div className="lead">Small plants are a minimum order of 30. Prices are GST exclusive.</div>
 						</Col>
 					</Row>
 					<div className="d-flex justify-content-center">
