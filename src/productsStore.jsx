@@ -186,8 +186,8 @@ const productsArray = [
 		title: "Cordyline australis",
 		subtitle: "Cabbage Tree - Ti Kouka",
 		description: <>Hardy sword leaf type palm with tall trunk. Sprays of white flowers in late spring.</>,
-		size: "6m x 2m",
-		price: 4.75
+		size: "6m x 2m, Pb18",
+		price: 15
 	},
 	{
 		id: "l01",
@@ -198,7 +198,7 @@ const productsArray = [
 		subtitle: "White Pine - Kahikatea",
 		description: <>Tallest native tree after many years. Thrives on moist to wet soils.</>,
 		size: "7m x 4m, 10yrs",
-		price: 4.75
+		price: 15
 	},
 	{
 		id: "l02",
@@ -209,7 +209,7 @@ const productsArray = [
 		subtitle: "Ake Ake",
 		description: <>Hardy green bushy large shrub. Excellent for hedges.</>,
 		size: "7m x 2.5m",
-		price: 4.75
+		price: 15
 	},
 	{
 		id: "l03",
@@ -219,8 +219,8 @@ const productsArray = [
 		title: "Dodonaea viscosa purpurea",
 		subtitle: "Purple Ake Ake",
 		description: <>Hardy, fast growing bushy shrub or small tree. Purple/burgundy leaves. Great for hedges.</>,
-		size: "6m x 2.5m",
-		price: 4.75
+		size: "6m x 2.5m, 8L",
+		price: 15
 	},
 	{
 		id: "l04",
@@ -230,8 +230,8 @@ const productsArray = [
 		title: "Pittosporum eugenoides",
 		subtitle: "Lemonwood - Tarata",
 		description: <>Hardy, bushy trees with large light green leaves.</>,
-		size: "5m x 3m",
-		price: 4.75
+		size: "5m x 3m, Pb8",
+		price: 10
 	},
 	{
 		id: "l05",
@@ -241,8 +241,8 @@ const productsArray = [
 		title: "Pseudopanax arboreus",
 		subtitle: "Five Finger",
 		description: <>Rapid growing dark green glossy leaves. Grows across centre of north island.</>,
-		size: "3m x 1.5m",
-		price: 4.75
+		size: "3m x 1.5m, 5L",
+		price: 12
 	},
 	{
 		id: "l06",
@@ -252,8 +252,8 @@ const productsArray = [
 		title: "Pseudopanax crassifolius",
 		subtitle: "Lancewood - Horoeka",
 		description: <>Tall stem with long serrated leaves until older when they become leathery and bushy. Hardy; avoid frost when young.</>,
-		size: "4m x 1m, 10yrs",
-		price: 4.75
+		size: "4m x 1m, 8L, 10yrs",
+		price: 25
 	},
 	{
 		id: "l07",
@@ -263,8 +263,8 @@ const productsArray = [
 		title: "Pseudopanax ferox",
 		subtitle: "Toothed Lancewood - Horoeka",
 		description: <>Tall stem with long saw tooth leaves. Bushes out with age. Hardy, avoid frost when young.</>,
-		size: "3m x 1.5m, 10yrs",
-		price: 4.75
+		size: "3m x 1.5m, 8L, 10yrs",
+		price: 25
 	},
 	{
 		id: "l08",
