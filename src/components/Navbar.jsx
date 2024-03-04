@@ -25,7 +25,7 @@ function NavComponent() {
 	const handleLinkClick = (event) => {
 		// prevent the navigation / id adding to url
 		event.preventDefault();
-		const targetId = event.target.getAttribute('href');
+		const targetId = event.currentTarget.getAttribute('href');
 		document.querySelector(targetId).scrollIntoView();
 	};
 
