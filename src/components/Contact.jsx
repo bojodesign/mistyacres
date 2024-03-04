@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 export default function Contact() {
 	const [status, setStatus] = useState('idle');
+
+	const formRef = useRef(null);
 
 	const handleSubmit = (e) => {
 		if (status === 'submitting') {
@@ -22,6 +24,7 @@ export default function Contact() {
 			.then((res) => {
 				if (res.ok) {
 					setStatus('submitted');
+					formRef.current.reset();
 				} else {
 					setStatus('error');
 				}
@@ -43,7 +46,7 @@ export default function Contact() {
 					</div>
 					<div className="divider-custom-line"></div>
 				</div>
-				<form onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bots-r-us">
+				<form ref={formRef} onSubmit={handleSubmit} data-netlify="true" netlify-honeypot="bots-r-us">
 					<input type="hidden" htmlFor="form-name" name="form-name" value="contact" />
 					<Row className="justify-content-center">
 						{status === 'submitted' && (
