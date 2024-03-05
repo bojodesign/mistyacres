@@ -69,23 +69,31 @@ export default function Contact() {
 									<label htmlFor="spam" className="required">Do Not Fill</label>
 								</div>
 								<div className="form-floating mb-3">
-									<input type="text" className="form-control" placeholder="Your name" htmlFor="name" name="name" data-sb-validations="required" required />
+									<input type="text" className="form-control" placeholder="Your name" htmlFor="name" name="name" inputMode="text" data-sb-validations="required" required />
 									<label htmlFor="name" className="required">Your name</label>
 									<div className="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
 								</div>
 								<div className="form-floating mb-3">
-									<input type="email" className="form-control" placeholder="name@example.com" htmlFor="email" name="email" data-sb-validations="required,email" required />
+									<input type="email" className="form-control" placeholder="name@example.com" htmlFor="email" name="email" data-sb-validations="required,email" inputMode="email" required onChange={(e) => {
+										e.target.value = e.target.value.toLowerCase();
+									}} />
 									<label htmlFor="email" className="required">Email address</label>
 									<div className="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
 									<div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
 								</div>
 								<div className="form-floating mb-3">
-									<input type="tel" className="form-control" placeholder="(123) 456-7890" htmlFor="phone" name="phone" />
+									<input type="tel" className="form-control" placeholder="(123) 456-7890" htmlFor="phone" name="phone" inputMode="tel" onInput={(e) => {
+										if (e.target.value.startsWith('+')) {
+											e.target.value = '+' + e.target.value.substring(1).replace(/[^0-9()]/g, '');
+										} else {
+											e.target.value = e.target.value.replace(/[^0-9()]/g, '');
+										}
+									}} />
 									<label htmlFor="phone">Phone number</label>
 									<div className="invalid-feedback">A phone number is required.</div>
 								</div>
 								<div className="form-floating mb-3">
-									<textarea className="form-control message" placeholder="Enter your message here..." htmlFor="message" name="message" data-sb-validations="required" required></textarea>
+									<textarea className="form-control message" placeholder="Enter your message here..." htmlFor="message" name="message" inputMode="text" data-sb-validations="required" required></textarea>
 									<label htmlFor="message" className="required">Message</label>
 									<div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
 								</div>
