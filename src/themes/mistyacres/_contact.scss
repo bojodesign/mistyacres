@@ -79,3 +79,6 @@
   color: #6c757d;
   cursor: pointer;
 }
+.form-control[name="email"] {
+  text-transform: lowercase;
+}
