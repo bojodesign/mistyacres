@@ -30,6 +30,7 @@ function ProductCard(props) {
 				<Card.Header className="text-start">
 					<Card.Title className="mb-0 text-secondary text-uppercase fw-bold">{product.title}</Card.Title>
 					<Card.Subtitle className="mb-2 text-secondary text-uppercase fw-bold">{product.subtitle}</Card.Subtitle>
+					<Card.Subtitle className="mb-2 text-measurement">{product.measure}</Card.Subtitle>
 				</Card.Header>
 				<Card.Body className="d-flex align-items-start text-start">
 					<Card.Img src={product.thumb} onClick={handleShowImage} alt={`${product.title} / ${product.subtitle}`} />
@@ -45,6 +46,7 @@ function ProductCard(props) {
 					<Modal.Title>
 						<h4 className="mb-0">{product.title}</h4>
 						<h5>{product.subtitle}</h5>
+						<h6>{product.measure}</h6>
 					</Modal.Title>
 				</Modal.Header>
 				<Modal.Body className="p-1">

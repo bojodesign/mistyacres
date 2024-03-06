@@ -7,8 +7,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Carex virgata",
 		subtitle: "Pukio",
+		measure: "1m x 1m",
 		description: <>Hardy large growing grass that can take wet or dry soils. Wind, frost, sun or shade.</>,
-		size: "1m x 1m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -18,8 +19,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Coprosma robusta",
 		subtitle: "Karamu",
+		measure: "2m x 1.5m",
 		description: <>Easily grown shrub. Glossy dark green leaves. Bright orange-red berries on female plants.</>,
-		size: "2m x 1.5m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -29,8 +31,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Cordyline australis",
 		subtitle: "Cabbage Tree - Ti Kouka",
+		measure: "6m x 2m",
 		description: <>Hardy sword leaf type palm with tall trunk. Sprays of white flowers in late spring.</>,
-		size: "6m x 2m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -40,8 +43,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Dodonaea viscosa",
 		subtitle: "Ake Ake",
+		measure: "7m x 2.5m",
 		description: <>Hardy green bushy large shrub. Excellent for hedges.</>,
-		size: "7m x 2.5m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -51,8 +55,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Dodonaea viscosa purpurea",
 		subtitle: "Purple Ake Ake",
+		measure: "6m x 2.5m",
 		description: <>Hardy, fast growing bushy shrub or small tree. Purple/burgundy leaves. Great for hedges.</>,
-		size: "6m x 2.5m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -62,8 +67,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Griselinia littoralis",
 		subtitle: "Native Broadleaf - Kapuka",
+		measure: "3m x 2m",
 		description: <>Glossy green, leathery leaves. Hardy shrub/small tree.</>,
-		size: "3m x 2m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -73,8 +79,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Kunzea ericoides",
 		subtitle: "Kanuka",
+		measure: "8m x 3m",
 		description: <>Great for re-vegetation and can handle dry ground. Small leaves with bright white flowers.</>,
-		size: "8m x 3m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -84,8 +91,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Leptospermum scoparium",
 		subtitle: "Tea Tree - Manuka",
+		measure: "4m x 3m",
 		description: <>Similar to Kanuka. Slightly larger leaves. Can handle moist soils.</>,
-		size: "4m x 3m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -95,8 +103,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Melicytus ramiflorus",
 		subtitle: "Whiteywood - Mahoe",
+		measure: "8m x 2m",
 		description: <>White bark and bushy, tall, leafy tree. Frost tender when young but hardier with age.</>,
-		size: "8m x 2m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -106,8 +115,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Phormium cookianum",
 		subtitle: "Mountain Flax",
+		measure: "1m x 1m",
 		description: <>Smaller growing flax than P. tenax. Good on hills, cliffs, dry areas.</>,
-		size: "1m x 1m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -117,8 +127,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Phormium tenax",
 		subtitle: "NZ Flax - Harakeke",
+		measure: "2m x 2m",
 		description: <>Well-known plant with green sword leaves. Handles wet areas.</>,
-		size: "2m x 2m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -128,8 +139,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Pittosporum eugenoides",
 		subtitle: "Lemonwood - Tarata",
+		measure: "5m x 3m",
 		description: <>Hardy, bushy trees with large light green leaves.</>,
-		size: "5m x 3m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -139,8 +151,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Pittosporum tenuifolium",
 		subtitle: "Kohuhu",
+		measure: "5m x 3m",
 		description: <>Easily grown, hardy small leaf Pittosporum.</>,
-		size: "5m x 3m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -150,8 +163,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Plagianthus regius",
 		subtitle: "Ribbon Wood - Manata",
+		measure: "12m x 4m",
 		description: <>Medium tree with divaricating growth. Hardy and semi deciduous.</>,
-		size: "12m x 4m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -161,8 +175,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Pseudopanax arboreus",
 		subtitle: "Five Finger",
+		measure: "3m x 1.5m",
 		description: <>Rapid growing dark green glossy leaves. Grows across centre of north island.</>,
-		size: "3m x 1.5m",
+		size: "",
 		price: 4.75
 	},
 	{
@@ -172,8 +187,9 @@ const productsArray = [
 		category: ['small',],
 		title: "Sophora tetraptera",
 		subtitle: "Kowhai",
+		measure: "4.5 x 3m",
 		description: <>Well-known tree with distinctive yellow flowers through spring. Requires free draining, moisture-retentive soil sheltered from cold wind.</>,
-		size: "4.5 x 3m",
+		size: "",
 		price: 4.75
 	},
 
@@ -185,8 +201,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Cordyline australis",
 		subtitle: "Cabbage Tree - Ti Kouka",
+		measure: "6m x 2m",
 		description: <>Hardy sword leaf type palm with tall trunk. Sprays of white flowers in late spring.</>,
-		size: "6m x 2m, Pb18",
+		size: "Pb18",
 		price: 15
 	},
 	{
@@ -196,8 +213,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Dacrycarpus dacrydioides",
 		subtitle: "White Pine - Kahikatea",
+		measure: "7m x 4m",
 		description: <>Tallest native tree after many years. Thrives on moist to wet soils.</>,
-		size: "7m x 4m",
+		size: "",
 		// price: 15
 	},
 	{
@@ -207,8 +225,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Dodonaea viscosa",
 		subtitle: "Ake Ake",
+		measure: "7m x 2.5m",
 		description: <>Hardy green bushy large shrub. Excellent for hedges.</>,
-		size: "7m x 2.5m, Pb18",
+		size: "Pb18",
 		price: 15
 	},
 	{
@@ -218,8 +237,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Dodonaea viscosa purpurea",
 		subtitle: "Purple Ake Ake",
+		measure: "6m x 2.5m",
 		description: <>Hardy, fast growing bushy shrub or small tree. Purple/burgundy leaves. Great for hedges.</>,
-		size: "6m x 2.5m, 8L",
+		size: "8L",
 		price: 15
 	},
 	{
@@ -229,8 +249,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Pittosporum eugenoides",
 		subtitle: "Lemonwood - Tarata",
+		measure: "5m x 3m",
 		description: <>Hardy, bushy trees with large light green leaves.</>,
-		size: "5m x 3m, Pb8",
+		size: "Pb8",
 		price: 10
 	},
 	{
@@ -240,8 +261,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Pseudopanax arboreus",
 		subtitle: "Five Finger",
+		measure: "3m x 1.5m",
 		description: <>Rapid growing dark green glossy leaves. Grows across centre of north island.</>,
-		size: "3m x 1.5m, 5L",
+		size: "5L",
 		price: 12
 	},
 	{
@@ -251,8 +273,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Pseudopanax crassifolius",
 		subtitle: "Lancewood - Horoeka",
+		measure: "4m x 1m",
 		description: <>Tall stem with long serrated leaves until older when they become leathery and bushy. Hardy; avoid frost when young.</>,
-		size: "4m x 1m, 8L",
+		size: "8L",
 		price: 25
 	},
 	{
@@ -262,8 +285,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Pseudopanax ferox",
 		subtitle: "Toothed Lancewood - Horoeka",
+		measure: "3m x 1.5m",
 		description: <>Tall stem with long saw tooth leaves. Bushes out with age. Hardy, avoid frost when young.</>,
-		size: "3m x 1.5m, 8L",
+		size: "8L",
 		price: 25
 	},
 	{
@@ -273,8 +297,9 @@ const productsArray = [
 		category: ['large',],
 		title: "Sophora tetraptera",
 		subtitle: "Kowhai",
+		measure: "4.5 x 3m",
 		description: <>Well-known tree with distinctive yellow flowers through spring. Requires free draining, moisture-retentive soil sheltered from cold wind.</>,
-		size: "4.5 x 3m",
+		size: "",
 		// price: 15
 	},
 ]
