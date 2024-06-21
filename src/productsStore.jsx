@@ -9,7 +9,6 @@ const productsArray = [
 		subtitle: "Kiokio",
 		measure: "1m x 1.5m",
 		description: <>Widely distributed common fern. Hardy fern that handles clay banks and also damp/wet areas. Red/bronze new growth.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -21,7 +20,6 @@ const productsArray = [
 		subtitle: "Pukio",
 		measure: "1m x 1m",
 		description: <>Hardy large growing grass that can take wet or dry soils. Wind, frost, sun or shade.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -33,7 +31,6 @@ const productsArray = [
 		subtitle: "Karamu",
 		measure: "2m x 1.5m",
 		description: <>Easily grown shrub. Glossy dark green leaves. Bright orange-red berries on female plants.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -45,7 +42,6 @@ const productsArray = [
 		subtitle: "Cabbage Tree - Ti Kouka",
 		measure: "6m x 2m",
 		description: <>Hardy sword leaf type palm with tall trunk. Sprays of white flowers in late spring.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -57,7 +53,6 @@ const productsArray = [
 		subtitle: "NZ Blueberry - Turutu",
 		measure: "0.5m x 0.5m",
 		description: <>Small soft sword leaf. Stunning iridescent purple berries in summer. Prefers shady sites until established. </>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -69,7 +64,6 @@ const productsArray = [
 		subtitle: "Ake Ake",
 		measure: "7m x 2.5m",
 		description: <>Hardy green bushy large shrub. Excellent for hedges.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -81,7 +75,6 @@ const productsArray = [
 		subtitle: "Purple Ake Ake",
 		measure: "6m x 2.5m",
 		description: <>Hardy, fast growing bushy shrub or small tree. Purple/burgundy leaves. Great for hedges.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -93,7 +86,6 @@ const productsArray = [
 		subtitle: "Native Broadleaf - Kapuka",
 		measure: "3m x 2m",
 		description: <>Glossy green, leathery leaves. Hardy shrub/small tree.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -105,7 +97,6 @@ const productsArray = [
 		subtitle: "Kanuka",
 		measure: "8m x 3m",
 		description: <>Great for re-vegetation and can handle dry ground. Small leaves with bright white flowers.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -117,7 +108,6 @@ const productsArray = [
 		subtitle: "Tea Tree - Manuka",
 		measure: "4m x 3m",
 		description: <>Similar to Kanuka. Slightly larger leaves. Can handle moist soils.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -129,7 +119,6 @@ const productsArray = [
 		subtitle: "Whiteywood - Mahoe",
 		measure: "8m x 2m",
 		description: <>White bark and bushy, tall, leafy tree. Frost tender when young but hardier with age.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -141,7 +130,6 @@ const productsArray = [
 		subtitle: "Mountain Flax",
 		measure: "1m x 1m",
 		description: <>Smaller growing flax than P. tenax. Good on hills, cliffs, dry areas.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -153,7 +141,6 @@ const productsArray = [
 		subtitle: "NZ Flax - Harakeke",
 		measure: "2m x 2m",
 		description: <>Well-known plant with green sword leaves. Handles wet areas.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -165,7 +152,6 @@ const productsArray = [
 		subtitle: "Lemonwood - Tarata",
 		measure: "5m x 3m",
 		description: <>Hardy, bushy trees with large light green leaves.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -177,7 +163,6 @@ const productsArray = [
 		subtitle: "Kohuhu",
 		measure: "5m x 3m",
 		description: <>Easily grown, hardy small leaf Pittosporum.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -189,7 +174,6 @@ const productsArray = [
 		subtitle: "Ribbon Wood - Manata",
 		measure: "12m x 4m",
 		description: <>Medium tree with divaricating growth. Hardy and semi deciduous.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -201,7 +185,6 @@ const productsArray = [
 		subtitle: "Five Finger",
 		measure: "3m x 1.5m",
 		description: <>Rapid growing dark green glossy leaves. Grows across centre of north island.</>,
-		size: "",
 		price: 4.75
 	},
 	{
@@ -213,7 +196,6 @@ const productsArray = [
 		subtitle: "Kowhai",
 		measure: "4.5 x 3m",
 		description: <>Well-known tree with distinctive yellow flowers through spring. Requires free draining, moisture-retentive soil sheltered from cold wind.</>,
-		size: "",
 		price: 4.75
 	},
 
@@ -228,7 +210,8 @@ const productsArray = [
 		measure: "6m x 2m",
 		description: <>Hardy sword leaf type palm with tall trunk. Sprays of white flowers in late spring.</>,
 		size: "Pb18",
-		price: 15
+		availability: "",
+		price: 25
 	},
 	{
 		id: "l01",
@@ -240,7 +223,8 @@ const productsArray = [
 		measure: "7m x 4m",
 		description: <>Tallest native tree after many years. Thrives on moist to wet soils.</>,
 		size: "",
-		// price: 15
+		availability: "",
+		//price: 
 	},
 	{
 		id: "l02",
@@ -252,7 +236,8 @@ const productsArray = [
 		measure: "7m x 2.5m",
 		description: <>Hardy green bushy large shrub. Excellent for hedges.</>,
 		size: "Pb18",
-		price: 15
+		availability: "",
+		price: 20
 	},
 	{
 		id: "l03",
@@ -264,7 +249,8 @@ const productsArray = [
 		measure: "6m x 2.5m",
 		description: <>Hardy, fast growing bushy shrub or small tree. Purple/burgundy leaves. Great for hedges.</>,
 		size: "8L",
-		price: 15
+		availability: "",
+		price: 20
 	},
 	{
 		id: "l04",
@@ -276,7 +262,8 @@ const productsArray = [
 		measure: "5m x 3m",
 		description: <>Hardy, bushy trees with large light green leaves.</>,
 		size: "Pb8",
-		price: 10
+		availability: "",
+		price: 12
 	},
 	{
 		id: "l05",
@@ -288,6 +275,7 @@ const productsArray = [
 		measure: "3m x 1.5m",
 		description: <>Rapid growing dark green glossy leaves. Grows across centre of north island.</>,
 		size: "5L",
+		availability: "",
 		price: 12
 	},
 	{
@@ -300,7 +288,8 @@ const productsArray = [
 		measure: "4m x 1m",
 		description: <>Tall stem with long serrated leaves until older when they become leathery and bushy. Hardy; avoid frost when young.</>,
 		size: "8L",
-		price: 25
+		availability: "Available Spring 2025",
+		price: 40
 	},
 	{
 		id: "l07",
@@ -312,7 +301,8 @@ const productsArray = [
 		measure: "3m x 1.5m",
 		description: <>Tall stem with long saw tooth leaves. Bushes out with age. Hardy, avoid frost when young.</>,
 		size: "8L",
-		price: 25
+		availability: "Available Spring 2025",
+		price: 40
 	},
 	{
 		id: "l08",
@@ -324,7 +314,8 @@ const productsArray = [
 		measure: "4.5 x 3m",
 		description: <>Well-known tree with distinctive yellow flowers through spring. Requires free draining, moisture-retentive soil sheltered from cold wind.</>,
 		size: "",
-		// price: 15
+		availability: "Available Spring 2025",
+		price: 30
 	},
 ]
 
