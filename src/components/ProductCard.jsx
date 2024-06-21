@@ -42,7 +42,7 @@ function ProductCard(props) {
 					</div>
 				</Card.Body>
 			</Card>
-			<Modal show={showImage} onHide={handleCloseImage}>
+			<Modal show={showImage} onHide={handleCloseImage} onExited={handleCloseImage}>
 				<Modal.Header closeButton className="pb-0">
 					<Modal.Title>
 						<h4 className="mb-0">{product.title}</h4>
