@@ -2,6 +2,9 @@ import { Container } from 'react-bootstrap';
 import { SiteVariables } from '../App';
 
 function Footer() {
+	// Get Current Year
+	const CurrentYear = () => <>{new Date().getFullYear()}</>;
+
 	// Render Footer
 	return (
 		<footer className="footer pt-4 text-center">
@@ -12,7 +15,7 @@ function Footer() {
 					</p>
 				</div>
 				<div className="copyright py-4">
-					<small>&copy; {SiteVariables.footerCopyright}</small>
+					<small>&copy;<CurrentYear /> {SiteVariables.footerCopyright}</small>
 				</div>
 			</Container>
 		</footer>
