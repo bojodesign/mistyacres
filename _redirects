@@ -1,3 +1,2 @@
 # Redirect default Netlify subdomain to primary domain
-
-https://domain.netlify.app/* https://www.domain.com/:splat 301!
+https://mistyacres.netlify.app/* https://www.mistyacres.co.nz/:splat 301!
