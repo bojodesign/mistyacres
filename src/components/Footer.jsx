@@ -1,9 +1,7 @@
 import { Container } from 'react-bootstrap';
-import { SiteVariables } from '../App';
+import { CurrentYear, SiteVariables } from '../App';
 
 function Footer() {
-	// Get Current Year
-	const CurrentYear = () => <>{new Date().getFullYear()}</>;
 
 	// Render Footer
 	return (

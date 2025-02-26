@@ -19,6 +19,9 @@ export const SiteVariables = {
   footerAddress: <>Misty Acres Nursery<br />Central Plateau<br />New Zealand</>
 }
 
+// Get Current Year
+export const CurrentYear = () => <>{new Date().getFullYear()}</>;
+
 // Render Site
 function App() {
   return (
