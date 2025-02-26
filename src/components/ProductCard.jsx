@@ -38,7 +38,6 @@ function ProductCard(props) {
 						<Card.Text className="mb-2 text-black">{product.description}</Card.Text>
 						<Card.Text className="text-black">{product.size}</Card.Text>
 						<Card.Text className="text-black text-decoration-underline">{product.availability}</Card.Text>
-						<Card.Text className="text-black fw-bold mb-0">{product.price !== undefined ? `$${product.price.toFixed(2)}` : ''}</Card.Text>
 					</div>
 				</Card.Body>
 			</Card>
