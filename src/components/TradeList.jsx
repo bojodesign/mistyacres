@@ -95,11 +95,12 @@ const TradeList = () => {
                     {tableData.map((row, rowIndex) => {
                         if (row.type === 'header') {
                             return (
-                                <><tr>
-                                    <td colSpan={6} className="text-secondary text-uppercase text-center">
-                                        <FileMetadata filePath="public/assets/tradelist.csv" />&nbsp;<CurrentYear />
-                                    </td>
-                                </tr>
+                                <>
+                                    <tr className="text-secondary text-uppercase text-center no-hover">
+                                        <td colSpan={6}>
+                                            <FileMetadata filePath="public/assets/tradelist.csv" />&nbsp;<CurrentYear />
+                                        </td>
+                                    </tr>
                                     <tr key={`trade-header-${rowIndex}`} className="text-secondary no-hover">
                                         {row.data.map((cell, cellIndex) => (
                                             <th key={`header-cell-${cellIndex}`}>{cell}</th>
