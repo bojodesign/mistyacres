@@ -3,9 +3,10 @@ import React, { useState } from 'react';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 import { productsArray } from '../productsStore';
 import ProductCard from './ProductCard';
+import TradeList from './TradeList';
 
 function Store() {
-	const [filter, setFilter] = useState('small');
+	const [filter, setFilter] = useState('available');
 
 	const filteredProducts = productsArray.filter((product) =>
 		product.category.includes(filter)
@@ -28,32 +29,50 @@ function Store() {
 						<Col className="text-center">
 							<div className="lead">Please request the plants you would like to order via the contact form.</div>
 							<div className="lead">We will get back to you shortly with availability, a final quote and delivery cost.</div>
-							<div className="lead">Small plants are a minimum order of 30. Prices are GST exclusive.</div>
 						</Col>
 					</Row>
 					<div className="d-flex justify-content-center">
 						<div className="tabs">
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
+								id="large"
+								aria-label="Currently Available"
+								active={filter === 'available'}
+								onClick={() => setFilter("available")}>Available</Button>
+							<Button
+								className="mx-2 btn btn-primary bg-red fw-bold"
 								id="small"
-								aria-label="Available"
+								aria-label="Small"
 								active={filter === 'small'}
 								onClick={() => setFilter("small")}>Small</Button>
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
 								id="large"
-								aria-label="Unavailable"
+								aria-label="Large"
 								active={filter === 'large'}
 								onClick={() => setFilter("large")}>Large</Button>
+							<Button
+								className="mx-2 btn btn-primary bg-red fw-bold"
+								id="large"
+								aria-label="Exotic"
+								active={filter === 'exotic'}
+								onClick={() => setFilter("exotic")}>Exotic</Button>
 						</div>
 					</div>
-					<Row xs={1} md={2} className="g-1 card-background">
-						{filteredProducts.map((product) => (
-							<Col align="center" key={`product.${product.id}`}>
-								<ProductCard product={product} />
-							</Col>
-						))}
-					</Row>
+					{filter === 'available' ? (
+						// Show trade list table for the "Currently Available" tab
+						<div className="card-background">
+							<TradeList />
+						</div>
+					) : (
+						<Row xs={1} md={2} className="g-1 card-background">
+							{filteredProducts.map((product) => (
+								<Col align="center" key={`product.${product.id}`}>
+									<ProductCard product={product} />
+								</Col>
+							))}
+						</Row>
+					)}
 				</Container>
 			</section>
 		</>
