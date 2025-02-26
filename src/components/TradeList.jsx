@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import { CurrentYear } from '../App';
+import FileMetadata from './Metadata';
 
 const TradeList = () => {
     const [tableData, setTableData] = useState([]);
@@ -93,21 +95,27 @@ const TradeList = () => {
                     {tableData.map((row, rowIndex) => {
                         if (row.type === 'header') {
                             return (
-                                <tr key={`trade-header-${rowIndex}`} className="text-secondary no-hover">
-                                    {row.data.map((cell, cellIndex) => (
-                                        <th key={`header-cell-${cellIndex}`}>{cell}</th>
-                                    ))}
+                                <><tr>
+                                    <td colSpan={6} className="text-secondary text-uppercase text-center">
+                                        <FileMetadata filePath="public/assets/tradelist.csv" />&nbsp;<CurrentYear />
+                                    </td>
                                 </tr>
+                                    <tr key={`trade-header-${rowIndex}`} className="text-secondary no-hover">
+                                        {row.data.map((cell, cellIndex) => (
+                                            <th key={`header-cell-${cellIndex}`}>{cell}</th>
+                                        ))}
+                                    </tr>
+                                </>
                             );
                         } else if (row.type === 'trade-main-category') {
                             return (
-                                <tr key={`main-cat-${rowIndex}`} className="text-secondary text-uppercase text-md-center trade-header no-hover h5">
+                                <tr key={`main-cat-${rowIndex}`} className="text-secondary text-uppercase text-center trade-header no-hover h5">
                                     <td colSpan={6}>{row.name}</td>
                                 </tr>
                             );
                         } else if (row.type === 'trade-sub-category') {
                             return (
-                                <tr key={`trade-sub-cat-${rowIndex}`} className="text-secondary text-md-center trade-header no-hover h5">
+                                <tr key={`trade-sub-cat-${rowIndex}`} className="text-secondary text-center trade-header no-hover h5">
                                     <td colSpan={6}>{row.name}</td>
                                 </tr>
                             );
