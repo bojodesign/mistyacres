@@ -2217,45 +2217,6 @@ progress {
   border-color: var(--bs-table-border-color);
 }
 
-@media (max-width: 537.98px) {
-  .table {
-    --bs-table-cell-padding: 0.5rem;
-  }
-
-  .table td,
-  .table th {
-    padding: var(--bs-table-cell-padding);
-    font-size: 0.875rem;
-    /* Optional: Reduce font size */
-  }
-}
-
-@media (max-width: 575.98px) {
-  .table {
-    --bs-table-cell-padding: 0.2rem;
-  }
-
-  .table td,
-  .table th {
-    padding: var(--bs-table-cell-padding);
-    font-size: 0.875rem;
-    /* Optional: Reduce font size */
-  }
-}
-
-@media (max-width: 767.98px) {
-  .table {
-    --bs-table-cell-padding: 0.25rem;
-  }
-
-  .table td,
-  .table th {
-    padding: var(--bs-table-cell-padding);
-    font-size: 0.875rem;
-    /* Optional: Reduce font size */
-  }
-}
-
 .table> :not(caption)>*>* {
   padding: 0.5rem 0.5rem;
   color: var(--bs-card-cap-color);
@@ -14007,5 +13968,3 @@ fieldset:disabled .btn {
     display: none !important;
   }
 }
-
-/*# sourceMappingURL=bootstrap.css.map */
