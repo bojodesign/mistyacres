@@ -2,11 +2,23 @@
 
 .footer {
   background-color: var(--bs-secondary);
-  color: var(--bs-gray-200);
+  color: var(--bs-gray-200) !important;
 }
+
 .copyright {
   background-color: var(--bs-secondary);
 }
+
+.issues {
+  background-color: var(--bs-secondary);
+  color: var(--bs-gray-200);
+
+  &:hover,
+  &:focus {
+    color: var(--bs-house-green);
+  }
+}
+
 address {
   font-style: normal;
   line-height: inherit;

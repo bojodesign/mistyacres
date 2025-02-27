@@ -1,3 +1,5 @@
+@use "variables";
+
 /* Contact */
 
 .bots-r-us {
@@ -9,21 +11,21 @@
 }
 
 .contact-success {
-  color: $success-color;
+  color: variables.$success-color;
   font-size: 2rem;
   text-align: center;
   padding-bottom: 1.5rem;
 }
 
 .contact-failure {
-  color: $danger-color;
+  color: variables.$danger-color;
   font-size: 2rem;
   text-align: center;
   padding-bottom: 1.5rem;
 }
 
 .required:after {
-  color: $danger-color;
+  color: variables.$danger-color;
   content: "*";
 }
 
@@ -47,14 +49,14 @@
 }
 
 .contact-close:hover {
-  color: $danger-color;
+  color: variables.$danger-color;
   text-decoration: none;
   opacity: 0.75;
 }
 
 .contact-close:focus {
   outline: 0;
-  color: $danger-color;
+  color: variables.$danger-color;
 }
 
 .contact-close:disabled,
@@ -79,6 +81,11 @@
   color: #6c757d;
   cursor: pointer;
 }
+
+.form-floating>label {
+  padding: 0.6rem 0.75rem;
+}
+
 .form-control[name="email"] {
   text-transform: lowercase;
 }

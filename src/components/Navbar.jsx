@@ -34,7 +34,7 @@ function NavComponent() {
 	// Render Nav
 	return (
 		<>
-			<Navbar expand="md" className="bg-secondary text-uppercase fixed-top justify-content-end" id="mainNav">
+			<Navbar expand="sm" className="bg-secondary text-uppercase fixed-top justify-content-end" id="mainNav">
 				<Container>
 					<Navbar.Brand>
 						<a href="#home" onClick={handleLinkClick}>

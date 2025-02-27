@@ -1,16 +1,19 @@
 /* Variables */
-@import "mistyacres/variables";
+@use "mistyacres/variables";
+
+/* Bootstrap CSS */
+@use "mistyacres/bootstrap";
 
 /* Main CSS */
-@import "mistyacres/main";
+@use "mistyacres/main";
 
 /* Mixins */
-@import "mistyacres/portfolio";
-@import "mistyacres/contact";
-@import "mistyacres/footer";
+@use "mistyacres/portfolio";
+@use "mistyacres/contact";
+@use "mistyacres/footer";
 
 /* Components */
-@import "mistyacres/nathan";
+@use "mistyacres/nathan";
 
 /* JS Plugins */
-@import "mistyacres/animate.min";
+@use "mistyacres/animate.min";

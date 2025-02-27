@@ -1,42 +1,40 @@
-﻿Botanical Name,Common Name,Pot Size,Current Height,Price,Approx.
-Native Varieties,,,,,
-,,,,,
-Smaller Grades,,,,,
+﻿Botanical Name,Common Name,Pot Size,Current Height,Price,Approx. Qty
+[Native Varieties],,,,,
+(Smaller Grades),,,,,
 Apodasmia similis ,Oioi,1.4L,0.5m,$5.00,125
 Carex buchananii ,Buchanan's sedge,1.4L,0.6m,$5.00,275
-Carex secta ,"Purei, Pukio",1.4L,0.6m,$5.00,200
+Carex secta ,Purei; Pukio,1.4L,0.6m,$5.00,200
 Carex testacea ,Speckled sedge,1.4L,0.3m,$5.00,160
 Carex virgata,Pukio,1.4L,0.4m,$5.00,200
-Coprosma grandifolia,"Kanono, Manono",1.4L,0.35,$5.00,85
+Coprosma grandifolia,Kanono; Manono,1.4L,0.35m,$5.00,85
 Coprosma lucida,Shining Karamu,1.4L,0.3m,$5.00,65
 Coprosma robusta ,Karamu,1.4L,0.4m,$5.00,290
-Cordyline australis,"Ti Kouka, Cabbage tree",1.4L,0.4m,$5.00,600
-Corokia cotoneaster,"Korokio, Wire netting bush",1.4L,0.5m,$5.00,25
-Dianella nigra,"Turutu, Nz Blueberry, Inkberry",1.5L,0.5m,$5.00,120
-Fuchsia excorticata ,"Kotukutuku, Tree Fuchsia",1.7L,0.3 - 0.5m,$8.00,85
-Griselinia littoralis,"Kapuka, Native Broadleaf",1.4L,0.4m,$5.00,990
+Cordyline australis,Ti Kouka;  Cabbage tree,1.4L,0.4m,$5.00,600
+Corokia cotoneaster,Korokio;  Wire netting bush,1.4L,0.5m,$5.00,25
+Dianella nigra,Turutu;  NZ Blueberry;  Inkberry,1.5L,0.5m,$5.00,120
+Fuchsia excorticata ,Kotukutuku;  Tree Fuchsia,1.7L,0.3m - 0.5m,$8.00,85
+Griselinia littoralis,Kapuka;  Native Broadleaf,1.4L,0.4m,$5.00,990
 Kunzea ericoides,Kanuka,1.4L,0.4m,$5.00,175
-Leptospermum scoparium,"Manuka, Ti tree",1.4L,0.5m,$5.00,180
-Melicytus ramiflorus,"Mahoe, Whiteywood",1.4L,0.4m,$5.00,315
-Phormium cookianum ,Mountain Flax,1.4L,0.4 - 0.6m,$5.00,440
-Phormium tenax ,"Harakeke, NZ Flax",1.4L,0.4m,$5.00,950
-Plagianthus regius,"Manata, Ribbon Wood",1.4L,0.8m,$5.00,105
+Leptospermum scoparium,Manuka;  Ti tree,1.4L,0.5m,$5.00,180
+Melicytus ramiflorus,Mahoe;  Whiteywood,1.4L,0.4m,$5.00,315
+Phormium cookianum ,Mountain Flax,1.4L,0.4m - 0.6m,$5.00,440
+Phormium tenax ,Harakeke;  NZ Flax,1.4L,0.4m,$5.00,950
+Plagianthus regius,Manata;  Ribbon Wood,1.4L,0.8m,$5.00,105
 Podocarpus totara,Totara,2L,1.1m,$8.00,50
 Pseudopanax arboreus,Five Finger,1.4L,0.3m,$5.00,100
-Larger Grades,,,,,
+(Larger Grades),,,,,
 Coprosma virecens ,Mingimingi,8L,0.6m,$12.00,5
-Cordyline australis,"Ti Kouka, Cabbage Tree",Pb18,1.5m,$20.00,50
-Dacrycarpus dacrydioides,"Kahikatea, White Pine",Pb18,1.8m,$25.00,50
+Cordyline australis,Ti Kouka;  Cabbage Tree,Pb18,1.5m,$20.00,50
+Dacrycarpus dacrydioides,Kahikatea;  White Pine,Pb18,1.8m,$25.00,50
 Dodonaea viscosa,Akeake,Pb18,0.9m,$16.00,10
 Dodonaea viscosa purpurea,Purple Akeake,10L,1.1m,$16.00,37
-Griselinia littoralis,Kapuka,Pb12,0.5 - 0.7m,$15.00,70
-Pittosporum eugenoides ,"Tarata, Lemonwood",Pb18,0.8 - 1m,$20.00,94
-Plagianthus regius,"Manata, Ribbon Wood",Pb18,1.5m,$20.00,22
-Pseudopanax arboreus ,Five finger,5L,0.5 - 0.7m,$12.00,110
-Pseudopanax crassifolius ,"Horoeka, Lancewood",10L,1.1 - 1.5m,$25.00,54
-Sophora tetraptera,Kowhai,Pb18,1.6 - 1.8m,$25.00,57
-Sophora tetraptera,Kowhai,5L,0.4 - 0.6m,$12.00,44
-Non Native Varieties,,,,,
-,,,,,
-Betula pendula,Silver Birch,1.5L,0.6 - 0.9m,$5.00,120
-Magnolia sieboldii,Oyama Magnolia,1.7L,0.4 - 0.6m,$7.00,200
+Griselinia littoralis,Kapuka,Pb12,0.5m - 0.7m,$15.00,70
+Pittosporum eugenoides ,Tarata;  Lemonwood,Pb18,0.8m - 1m,$20.00,94
+Plagianthus regius,Manata;  Ribbon Wood,Pb18,1.5m,$20.00,22
+Pseudopanax arboreus ,Five finger,5L,0.5m - 0.7m,$12.00,110
+Pseudopanax crassifolius ,Horoeka;  Lancewood,10L,1.1m - 1.5m,$25.00,54
+Sophora tetraptera,Kowhai,Pb18,1.6m - 1.8m,$25.00,57
+Sophora tetraptera,Kowhai,5L,0.4m - 0.6m,$12.00,44
+[Exotic Varieties],,,,,
+Betula pendula,Silver Birch,1.5L,0.6m - 0.9m,$5.00,120
+Magnolia sieboldii,Oyama Magnolia,1.7L,0.4m - 0.6m,$7.00,200
