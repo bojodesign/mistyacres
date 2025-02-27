@@ -35,8 +35,8 @@ function Store() {
 						<div className="tabs">
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
-								id="large"
-								aria-label="Currently Available"
+								id="available"
+								aria-label="Available"
 								active={filter === 'available'}
 								onClick={() => setFilter("available")}>Available</Button>
 							<Button
@@ -53,14 +53,14 @@ function Store() {
 								onClick={() => setFilter("large")}>Large</Button>
 							<Button
 								className="mx-2 btn btn-primary bg-red fw-bold"
-								id="large"
+								id="exotic"
 								aria-label="Exotic"
 								active={filter === 'exotic'}
 								onClick={() => setFilter("exotic")}>Exotic</Button>
 						</div>
 					</div>
 					{filter === 'available' ? (
-						// Show trade list table for the "Currently Available" tab
+						// Show trade list table for the "Available" tab
 						<div className="card-background">
 							<TradeList />
 						</div>
