@@ -90,23 +90,31 @@ const TradeList = () => {
 
     return (
         <div className="trade-list-container hstack justify-content-center">
-            <Table responsive className="table table-bordered table-hover trade-bg text-secondary h6">
+            <Table responsive="sm" className="table-bordered table-hover trade-bg text-secondary h6">
+                <colgroup>
+                    <col style={{ width: '28%' }} />
+                    <col style={{ width: '22%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '15%' }} />
+                    <col style={{ width: '10%' }} />
+                    <col style={{ width: '15%' }} />
+                </colgroup>
                 <tbody>
                     {tableData.map((row, rowIndex) => {
                         if (row.type === 'header') {
                             return (
-                                <>
+                                <React.Fragment key={`header-group-${rowIndex}`}>
                                     <tr className="text-secondary text-uppercase text-center no-hover">
                                         <td colSpan={6}>
                                             <FileMetadata filePath="public/assets/tradelist.csv" />&nbsp;<CurrentYear />
                                         </td>
                                     </tr>
-                                    <tr key={`trade-header-${rowIndex}`} className="text-secondary no-hover">
+                                    <tr className="text-secondary no-hover">
                                         {row.data.map((cell, cellIndex) => (
                                             <th key={`header-cell-${cellIndex}`}>{cell}</th>
                                         ))}
                                     </tr>
-                                </>
+                                </React.Fragment>
                             );
                         } else if (row.type === 'trade-main-category') {
                             return (
@@ -129,9 +137,9 @@ const TradeList = () => {
                             );
                         } else {
                             return (
-                                <tr key={`trade-data-${rowIndex}`} className="trade-data-row">
+                                <tr key={`data-${rowIndex}`} className="data-row">
                                     {row.data.map((cell, cellIndex) => (
-                                        <td key={`data-cell-${rowIndex}-${cellIndex}`}>
+                                        <td key={`cell-${rowIndex}-${cellIndex}`}>
                                             {cellIndex === 4 ? formatPrice(cell) : cell}
                                         </td>
                                     ))}
