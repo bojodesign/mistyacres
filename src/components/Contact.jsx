@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
 export default function Contact() {

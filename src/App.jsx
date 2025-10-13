@@ -1,6 +1,5 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFileCirclePlus, faFileCircleXmark, faMinus, faPlus, faSeedling, faX } from '@fortawesome/free-solid-svg-icons';
-import React from 'react';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
