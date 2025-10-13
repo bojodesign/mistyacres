@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
-import { CurrentYear } from '../App';
-import FileMetadata from './Metadata';
 
 const TradeList = () => {
     const [tableData, setTableData] = useState([]);
+    const [dateRange, setDateRange] = useState('');
 
     useEffect(() => {
         // Fetch CSV file
         fetch('/assets/tradelist.csv')
             .then(response => response.text())
             .then(csvText => {
-                const rows = processCSVData(csvText);
+                const { dateRange, rows } = processCSVData(csvText);
+                setDateRange(dateRange);
                 setTableData(rows);
             })
             .catch(error => {
@@ -19,20 +19,23 @@ const TradeList = () => {
             });
     }, []);
 
-    // Process CSV data to identify headers, categories, and data rows
+    // Process CSV data to identify date range, headers, categories, and data rows
     const processCSVData = (csvText) => {
         const lines = csvText.trim().split('\n');
         const allRows = [];
 
-        // First row is header
-        const headers = lines[0].split(',');
+        // First row is now the date range
+        const dateRangeLine = lines[0].split(',')[0].trim();
+
+        // Second row is header
+        const headers = lines[1].split(',');
         allRows.push({
             type: 'header',
             data: headers
         });
 
-        // Process remaining rows
-        for (let i = 1; i < lines.length; i++) {
+        // Process remaining rows (starting from line 2)
+        for (let i = 2; i < lines.length; i++) {
             const line = lines[i].trim();
 
             // Handle empty or comma-only rows
@@ -72,7 +75,7 @@ const TradeList = () => {
             });
         }
 
-        return allRows;
+        return { dateRange: dateRangeLine, rows: allRows };
     };
 
     // Format price with $ symbol
@@ -106,7 +109,7 @@ const TradeList = () => {
                                 <React.Fragment key={`header-group-${rowIndex}`}>
                                     <tr className="text-secondary text-uppercase text-center no-hover">
                                         <td colSpan={6}>
-                                            <FileMetadata filePath="public/assets/tradelist.csv" />&nbsp;<CurrentYear />
+                                            {dateRange}
                                         </td>
                                     </tr>
                                     <tr className="text-secondary no-hover">
