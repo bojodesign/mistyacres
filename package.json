@@ -1,7 +1,7 @@
 {
   "name": "mistyacres",
   "private": true,
-  "version": "0.3.3",
+  "version": "0.3.4",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,22 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.1.0",
-    "@fortawesome/free-regular-svg-icons": "^7.1.0",
-    "@fortawesome/free-solid-svg-icons": "^7.1.0",
-    "@fortawesome/react-fontawesome": "^3.1.0",
-    "react": "^19.2.0",
+    "@fortawesome/fontawesome-svg-core": "^7.2.0",
+    "@fortawesome/free-regular-svg-icons": "^7.2.0",
+    "@fortawesome/free-solid-svg-icons": "^7.2.0",
+    "@fortawesome/react-fontawesome": "^3.2.0",
+    "react": "^19.2.4",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.2.0",
-    "sass": "^1.94.2"
+    "react-dom": "^19.2.4",
+    "sass": "^1.97.3"
   },
   "devDependencies": {
     "@svgr/plugin-jsx": "^8.1.0",
     "@svgr/plugin-svgo": "^8.1.0",
-    "@types/react": "^19.2.7",
+    "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^5.1.1",
-    "vite": "^7.2.4",
+    "@vitejs/plugin-react": "^5.1.4",
+    "vite": "^7.3.1",
     "vite-plugin-svgr": "^4.5.0"
   }
 }
