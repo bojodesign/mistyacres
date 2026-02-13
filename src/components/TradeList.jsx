@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import { Col, Row, Table } from 'react-bootstrap';
 
 const TradeList = () => {
     const [tableData, setTableData] = useState([]);
@@ -92,67 +92,74 @@ const TradeList = () => {
     };
 
     return (
-        <div className="trade-list-container hstack justify-content-center">
-            <Table responsive="sm" className="table-bordered table-hover trade-bg text-secondary h6">
-                <colgroup>
-                    <col style={{ width: '28%' }} />
-                    <col style={{ width: '22%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '15%' }} />
-                    <col style={{ width: '10%' }} />
-                    <col style={{ width: '15%' }} />
-                </colgroup>
-                <tbody>
-                    {tableData.map((row, rowIndex) => {
-                        if (row.type === 'header') {
-                            return (
-                                <React.Fragment key={`header-group-${rowIndex}`}>
-                                    <tr className="text-secondary text-uppercase text-center no-hover">
-                                        <td colSpan={6}>
-                                            {dateRange}
-                                        </td>
+        <>
+            <div className="trade-list-container hstack justify-content-center">
+                <Table responsive="sm" className="table-bordered table-hover trade-bg text-secondary h6">
+                    <colgroup>
+                        <col style={{ width: '28%' }} />
+                        <col style={{ width: '22%' }} />
+                        <col style={{ width: '10%' }} />
+                        <col style={{ width: '15%' }} />
+                        <col style={{ width: '10%' }} />
+                        <col style={{ width: '15%' }} />
+                    </colgroup>
+                    <tbody>
+                        {tableData.map((row, rowIndex) => {
+                            if (row.type === 'header') {
+                                return (
+                                    <React.Fragment key={`header-group-${rowIndex}`}>
+                                        <tr className="text-secondary text-uppercase text-center no-hover">
+                                            <td colSpan={6}>
+                                                {dateRange}
+                                            </td>
+                                        </tr>
+                                        <tr className="text-secondary no-hover">
+                                            {row.data.map((cell, cellIndex) => (
+                                                <th key={`header-cell-${cellIndex}`}>{cell}</th>
+                                            ))}
+                                        </tr>
+                                    </React.Fragment>
+                                );
+                            } else if (row.type === 'trade-main-category') {
+                                return (
+                                    <tr key={`main-cat-${rowIndex}`} className="text-secondary text-uppercase text-center trade-header no-hover h5">
+                                        <td colSpan={6}>{row.name}</td>
                                     </tr>
-                                    <tr className="text-secondary no-hover">
+                                );
+                            } else if (row.type === 'trade-sub-category') {
+                                return (
+                                    <tr key={`trade-sub-cat-${rowIndex}`} className="text-secondary text-center trade-header no-hover h5">
+                                        <td colSpan={6}>{row.name}</td>
+                                    </tr>
+                                );
+                            } else if (row.type === 'spacer') {
+                                // Render blank row
+                                return (
+                                    <tr key={`spacer-${rowIndex}`} className="spacer-row card-header no-hover">
+                                        <td colSpan={6}></td>
+                                    </tr>
+                                );
+                            } else {
+                                return (
+                                    <tr key={`data-${rowIndex}`} className="data-row">
                                         {row.data.map((cell, cellIndex) => (
-                                            <th key={`header-cell-${cellIndex}`}>{cell}</th>
+                                            <td key={`cell-${rowIndex}-${cellIndex}`}>
+                                                {cellIndex === 4 ? formatPrice(cell) : cell}
+                                            </td>
                                         ))}
                                     </tr>
-                                </React.Fragment>
-                            );
-                        } else if (row.type === 'trade-main-category') {
-                            return (
-                                <tr key={`main-cat-${rowIndex}`} className="text-secondary text-uppercase text-center trade-header no-hover h5">
-                                    <td colSpan={6}>{row.name}</td>
-                                </tr>
-                            );
-                        } else if (row.type === 'trade-sub-category') {
-                            return (
-                                <tr key={`trade-sub-cat-${rowIndex}`} className="text-secondary text-center trade-header no-hover h5">
-                                    <td colSpan={6}>{row.name}</td>
-                                </tr>
-                            );
-                        } else if (row.type === 'spacer') {
-                            // Render blank row
-                            return (
-                                <tr key={`spacer-${rowIndex}`} className="spacer-row card-header no-hover">
-                                    <td colSpan={6}></td>
-                                </tr>
-                            );
-                        } else {
-                            return (
-                                <tr key={`data-${rowIndex}`} className="data-row">
-                                    {row.data.map((cell, cellIndex) => (
-                                        <td key={`cell-${rowIndex}-${cellIndex}`}>
-                                            {cellIndex === 4 ? formatPrice(cell) : cell}
-                                        </td>
-                                    ))}
-                                </tr>
-                            );
-                        }
-                    })}
-                </tbody>
-            </Table>
-        </div>
+                                );
+                            }
+                        })}
+                    </tbody>
+                </Table>
+            </div>
+            <Row className="text-secondary">
+                <Col className="text-center">
+                    <div className="lead">Plus lots of other exciting native varieties becoming available in winter - large and small grades.</div>
+                </Col>
+            </Row>
+        </>
     );
 };
 
